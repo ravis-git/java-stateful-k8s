@@ -1,0 +1,42 @@
+# this file includes the service and the deployment description for postgres
+
+# service definition
+apiVersion: v1
+kind: Service
+metadata:
+  name: postgres
+spec:
+  ports:
+  - port: 5432
+  selector:
+    app: postgres
+---
+
+# deployment definition
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: postgres
+spec:
+  template:
+    metadata:
+      labels:
+        app: postgres
+    spec:
+      containers:
+      - image: "postgres:9.6.2"
+        name: postgres
+        env:
+        - name: POSGRES_USER
+          valueFrom:
+            configMapKeyRef:
+              name: k8s-config
+              key: postgres_user
+        - name: POSTGRES_PASSWORD
+          valueFrom:
+            configMapKeyRef:
+              name: k8s-config
+              key: postgres_password
+        ports:
+        - containerPort: 5432
+          name: postgres

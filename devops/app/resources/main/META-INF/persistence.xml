@@ -1,0 +1,6 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+    <persistence-unit name="enhance" transaction-type="RESOURCE_LOCAL">
+        <provider>org.apache.openjpa.persistence.PersistenceProviderImpl</provider>
+        <class>com.example.javastatefulk8s.model.ShipNotice</class>
+    </persistence-unit>
+</persistence>
