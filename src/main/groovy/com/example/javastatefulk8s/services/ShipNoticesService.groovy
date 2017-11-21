@@ -1,6 +1,7 @@
 package com.example.javastatefulk8s.services
 
 import com.example.javastatefulk8s.model.ShipNotice
+import com.example.javastatefulk8s.model.ShipNoticesBatch
 import com.example.javastatefulk8s.model.jpa.ShipNoticeRepository
 import groovy.json.JsonBuilder
 import groovy.util.logging.Slf4j
@@ -38,9 +39,12 @@ class ShipNoticesService {
     @PUT
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    ingestShipNotice(ShipNotice shipNotice) {
+    ingestShipNoticesBatch(ShipNoticesBatch shipNoticesBatch) {
 
-        shipNoticeRepository.save(shipNotice)
+        shipNoticesBatch.getShipNotices().each {
+            shipNoticeRepository.save(it)
+        }
+
         return jsonBuilder {
             serivce 'ship-notice'
             method 'PUT'

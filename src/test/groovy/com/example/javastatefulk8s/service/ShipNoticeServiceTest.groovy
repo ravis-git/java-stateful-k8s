@@ -3,6 +3,8 @@ package com.example.javastatefulk8s.service
 import com.example.javastatefulk8s.DemoApplicationTests
 import com.example.javastatefulk8s.model.ShipNotice
 import com.example.javastatefulk8s.model.ShipNoticeBuilder
+import com.example.javastatefulk8s.model.ShipNoticesBatch
+import com.example.javastatefulk8s.model.ShipNoticesBatchBuilder
 import groovy.json.JsonBuilder
 import groovy.util.logging.Slf4j
 import io.restassured.RestAssured
@@ -52,7 +54,7 @@ class ShipNoticeServiceTest extends DemoApplicationTests {
         given()
             .accept(MediaType.APPLICATION_JSON)
             .contentType(MediaType.APPLICATION_JSON)
-            .body( this.createShipNotice() )
+            .body( this.createShipNoticeBatch() )
             .when()
                 .put(SHIP_NOTICE_URL)
                 .then()
@@ -61,12 +63,21 @@ class ShipNoticeServiceTest extends DemoApplicationTests {
                     .body('code', equalTo('CREATED'))
     }
 
-    private ShipNotice createShipNotice() {
-        ShipNotice shipNotice = new ShipNoticeBuilder()
-            .vin(123)
-            .customer('FORD')
-            .timeOfMessageOrigin(Instant.now().atOffset(ZoneOffset.UTC).toString())
-            .create()
-        return shipNotice
+    private ShipNoticesBatch createShipNoticeBatch() {
+
+        ShipNoticesBatch shipNotices = new ShipNoticesBatchBuilder()
+                                        .transactionId(random.nextInt(100000000))
+                                        .create()
+
+        shipNotices.setShipNotices(
+            (1..10000).collect {
+                new ShipNoticeBuilder()
+                    .vin(it)
+                    .customer('FORD')
+                    .timeOfMessageOrigin(Instant.now().atOffset(ZoneOffset.UTC).toString())
+                    .create()
+            }
+        )
+        return shipNotices
     }
 }
