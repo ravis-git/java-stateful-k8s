@@ -16,3 +16,7 @@ logging:
     com.example: TRACE
     openjpa: TRACE
     org.springframework.data: TRACE
+
+camel:
+  springboot:
+    main-run-controller: true
