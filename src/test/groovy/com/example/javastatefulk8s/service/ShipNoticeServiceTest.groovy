@@ -30,7 +30,7 @@ class ShipNoticeServiceTest extends DemoApplicationTests {
 
     private static final Random random = new Random()
     private static final String SHIP_NOTICE_URL = "/ship-notices"
-    private static final makes = ['FORD', 'CHRYSLER', 'GM', 'TOYOTA', 'BMW']
+    private static final makes = ['FORD', 'CHRYSLER', 'GMC', 'TOYOTA']
     private static final int vinCollectionSize = 10000
 
     @Before
@@ -51,6 +51,9 @@ class ShipNoticeServiceTest extends DemoApplicationTests {
     @Test
     void loadShipNotice() {
 
+//        //wait for 3 second for camel routes to initialize
+//        Thread.sleep(3000)
+
         given()
             .accept(MediaType.APPLICATION_JSON)
             .contentType(MediaType.APPLICATION_JSON)
@@ -70,7 +73,7 @@ class ShipNoticeServiceTest extends DemoApplicationTests {
                                         .create()
 
         shipNotices.setShipNotices(
-            (1..10000).collect {
+            (1..50).collect {
                 new ShipNoticeBuilder()
                     .vin(it)
                     .customer(makes[random.nextInt(5)])

@@ -22,6 +22,12 @@ class ShipNotice {
     @Column(name = 'message_origin_time')
     String timeOfMessageOrigin
 
+    @Column(name = 'message_process_time')
+    String timeMessageProcessed
+
+    long duration
+
+
 }
 
 @Builder(builderStrategy = ExternalStrategy, forClass = ShipNotice,

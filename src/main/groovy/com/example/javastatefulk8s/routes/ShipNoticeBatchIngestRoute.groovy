@@ -2,8 +2,6 @@ package com.example.javastatefulk8s.routes
 
 import com.example.javastatefulk8s.processor.ShipNoticeSaveProcessor
 import org.apache.camel.builder.RouteBuilder
-import org.slf4j.Logger
-import org.slf4j.LoggerFactory
 import org.springframework.stereotype.Component
 
 /**
@@ -12,7 +10,6 @@ import org.springframework.stereotype.Component
 @Component
 class ShipNoticeBatchIngestRoute extends RouteBuilder {
 
-    private static final Logger slf4jLogger = LoggerFactory.getLogger(ShipNoticeBatchIngestRoute.class)
     @Override
     void configure() throws Exception {
         from('seda:newAsnChannel')
@@ -20,6 +17,6 @@ class ShipNoticeBatchIngestRoute extends RouteBuilder {
             .streamCaching()
             .split(body())
                 .bean(ShipNoticeSaveProcessor.class, 'saveShipNotice')
-//                .to('seda:singleAsnChannel')
+                .to('seda:singleAsnChannel')
     }
 }

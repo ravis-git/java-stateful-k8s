@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">5.117s</div>
+<div class="counter">1.683s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,17 +79,17 @@
 </thead>
 <tr>
 <td class="success">contextLoads</td>
-<td>0.013s</td>
+<td>0.003s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">loadShipNotice</td>
-<td>5.033s</td>
+<td>1.655s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">shipServiceIsUp</td>
-<td>0.071s</td>
+<td>0.025s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -97,13 +97,1265 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2017-11-21 21:24:42.808  INFO 58944 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.javastatefulk8s.service.ShipNoticeServiceTest], using SpringBootContextLoader
-2017-11-21 21:24:42.813  INFO 58944 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.example.javastatefulk8s.service.ShipNoticeServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-2017-11-21 21:24:42.813  INFO 58944 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.javastatefulk8s.service.ShipNoticeServiceTest]: ShipNoticeServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2017-11-21 21:24:42.839  INFO 58944 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.javastatefulk8s.DemoApplication for test class com.example.javastatefulk8s.service.ShipNoticeServiceTest
-2017-11-21 21:24:42.846  INFO 58944 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
-2017-11-21 21:24:42.850  INFO 58944 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1671acf6, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6ee1305a, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4eeed981, org.springframework.test.context.support.DirtiesContextTestExecutionListener@537a6f18, org.springframework.test.context.transaction.TransactionalTestExecutionListener@48776f9d, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2f73e529, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@17e91397, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@176bacdd, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6493222a, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5479c93c, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@bd31d8f, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4194456c]
-2017-11-21 21:24:47.130 DEBUG 58944 --- [//newAsnChannel] stomAnnotationTransactionAttributeSource : Adding transactional method 'save' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+<pre>2017-11-21 22:53:33.872  INFO 62383 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.javastatefulk8s.service.ShipNoticeServiceTest], using SpringBootContextLoader
+2017-11-21 22:53:33.873  INFO 62383 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.example.javastatefulk8s.service.ShipNoticeServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2017-11-21 22:53:33.873  INFO 62383 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.javastatefulk8s.service.ShipNoticeServiceTest]: ShipNoticeServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2017-11-21 22:53:33.884  INFO 62383 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.javastatefulk8s.DemoApplication for test class com.example.javastatefulk8s.service.ShipNoticeServiceTest
+2017-11-21 22:53:33.887  INFO 62383 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-11-21 22:53:33.890  INFO 62383 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1084652f, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4342c4a7, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3eff962e, org.springframework.test.context.support.DirtiesContextTestExecutionListener@56dab67, org.springframework.test.context.transaction.TransactionalTestExecutionListener@36f31bf8, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@63c1867d, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@214d22cd, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@49139310, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@67917d11, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@80cedf0, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@409ffd76, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@15417d66]
+2017-11-21 22:53:35.081 DEBUG 62383 --- [//newAsnChannel] stomAnnotationTransactionAttributeSource : Adding transactional method 'save' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+2017-11-21 22:53:35.188 ERROR 62383 --- [//newAsnChannel] o.a.camel.processor.DefaultErrorHandler  : Failed delivery for (MessageId: ID-C02P377TG3QD-1511326411392-0-6 on ExchangeId: ID-C02P377TG3QD-1511326411392-0-5). Exhausted after delivery attempt: 1 caught: org.springframework.orm.jpa.JpaSystemException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.; nested exception is &lt;openjpa-2.4.1-r422266:1730418 fatal general error&gt; org.apache.openjpa.persistence.PersistenceException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.
+FailedObject: com.example.javastatefulk8s.model.ShipNotice@6169aa12
+
+Message History
+---------------------------------------------------------------------------------------------------------------------------------------
+RouteId              ProcessorId          Processor                                                                        Elapsed (ms)
+[route4            ] [route4            ] [seda://newAsnChannel                                                          ] [       135]
+[route4            ] [bean4             ] [bean[com.example.javastatefulk8s.processor.ShipNoticeSaveProcessor@6183e957]  ] [        14]
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+
+org.springframework.orm.jpa.JpaSystemException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.; nested exception is &lt;openjpa-2.4.1-r422266:1730418 fatal general error&gt; org.apache.openjpa.persistence.PersistenceException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.
+FailedObject: com.example.javastatefulk8s.model.ShipNotice@6169aa12
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.convertJpaAccessExceptionIfPossible(EntityManagerFactoryUtils.java:418) ~[spring-orm-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.orm.jpa.DefaultJpaDialect.translateExceptionIfPossible(DefaultJpaDialect.java:122) ~[spring-orm-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:521) ~[spring-orm-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:761) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:730) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:504) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:292) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:133) ~[spring-data-jpa-1.11.8.RELEASE.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:57) ~[spring-data-commons-1.13.8.RELEASE.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at com.sun.proxy.$Proxy97.save(Unknown Source) ~[na:na]
+	at org.springframework.data.repository.CrudRepository$save.call(Unknown Source) ~[na:na]
+	at com.example.javastatefulk8s.processor.ShipNoticeSaveProcessor.saveShipNotice(ShipNoticeSaveProcessor.groovy:18) ~[main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_91]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_91]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_91]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_91]
+	at org.apache.camel.component.bean.MethodInfo.invoke(MethodInfo.java:478) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.bean.MethodInfo$1.doProceed(MethodInfo.java:297) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.bean.MethodInfo$1.proceed(MethodInfo.java:270) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.bean.AbstractBeanProcessor.process(AbstractBeanProcessor.java:187) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.bean.BeanProcessor.process(BeanProcessor.java:53) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:138) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:101) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.MulticastProcessor.doProcessSequential(MulticastProcessor.java:700) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.MulticastProcessor.doProcessSequential(MulticastProcessor.java:623) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.MulticastProcessor.process(MulticastProcessor.java:247) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.Splitter.process(Splitter.java:114) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.seda.SedaConsumer.sendToConsumers(SedaConsumer.java:298) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.seda.SedaConsumer.doRun(SedaConsumer.java:210) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.seda.SedaConsumer.run(SedaConsumer.java:155) [camel-core-2.20.0.jar:2.20.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_91]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_91]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+Caused by: org.apache.openjpa.persistence.PersistenceException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.
+	at org.apache.openjpa.kernel.BrokerImpl.newFlushException(BrokerImpl.java:2368) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.BrokerImpl.flush(BrokerImpl.java:2205) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.BrokerImpl.flushSafe(BrokerImpl.java:2103) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.BrokerImpl.beforeCompletion(BrokerImpl.java:2021) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.LocalManagedRuntime.commit(LocalManagedRuntime.java:81) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.BrokerImpl.commit(BrokerImpl.java:1526) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.DelegatingBroker.commit(DelegatingBroker.java:932) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.persistence.EntityManagerImpl.commit(EntityManagerImpl.java:571) ~[openjpa-persistence-2.4.1.jar:2.4.1]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:517) ~[spring-orm-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	... 46 common frames omitted
+Caused by: org.apache.openjpa.persistence.PersistenceException: ERROR: null value in column &quot;customer&quot; violates not-null constraint
+  Detail: Failing row contains (2, null, 2017-11-22T04:53:34.094Z, null, 0). {prepstmnt 1530598226 INSERT INTO ship_notice_req (vin, customer, duration, message_process_time, message_origin_time) VALUES (?, ?, ?, ?, ?)} [code=0, state=23502]
+	at org.apache.openjpa.jdbc.sql.DBDictionary.narrow(DBDictionary.java:4997) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.sql.DBDictionary.newStoreException(DBDictionary.java:4963) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.sql.SQLExceptions.getStore(SQLExceptions.java:133) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.sql.SQLExceptions.getStore(SQLExceptions.java:75) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.flushAndUpdate(PreparedStatementManagerImpl.java:144) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.BatchingPreparedStatementManagerImpl.flushAndUpdate(BatchingPreparedStatementManagerImpl.java:79) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.flushInternal(PreparedStatementManagerImpl.java:100) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.flush(PreparedStatementManagerImpl.java:88) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.ConstraintUpdateManager.flush(ConstraintUpdateManager.java:550) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.ConstraintUpdateManager.flush(ConstraintUpdateManager.java:106) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.BatchingConstraintUpdateManager.flush(BatchingConstraintUpdateManager.java:59) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.AbstractUpdateManager.flush(AbstractUpdateManager.java:104) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.AbstractUpdateManager.flush(AbstractUpdateManager.java:77) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.JDBCStoreManager.flush(JDBCStoreManager.java:731) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.DelegatingStoreManager.flush(DelegatingStoreManager.java:131) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	... 54 common frames omitted
+Caused by: org.apache.openjpa.lib.jdbc.ReportingSQLException: ERROR: null value in column &quot;customer&quot; violates not-null constraint
+  Detail: Failing row contains (2, null, 2017-11-22T04:53:34.094Z, null, 0). {prepstmnt 1530598226 INSERT INTO ship_notice_req (vin, customer, duration, message_process_time, message_origin_time) VALUES (?, ?, ?, ?, ?)} [code=0, state=23502]
+	at org.apache.openjpa.lib.jdbc.LoggingConnectionDecorator.wrap(LoggingConnectionDecorator.java:218) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.LoggingConnectionDecorator.wrap(LoggingConnectionDecorator.java:194) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.LoggingConnectionDecorator.access$1000(LoggingConnectionDecorator.java:58) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.LoggingConnectionDecorator$LoggingConnection$LoggingPreparedStatement.executeUpdate(LoggingConnectionDecorator.java:1133) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:275) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:275) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.JDBCStoreManager$CancelPreparedStatement.executeUpdate(JDBCStoreManager.java:1791) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.executeUpdate(PreparedStatementManagerImpl.java:268) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.flushAndUpdate(PreparedStatementManagerImpl.java:119) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	... 64 common frames omitted
+
+2017-11-21 22:53:35.206 ERROR 62383 --- [//newAsnChannel] o.a.camel.processor.DefaultErrorHandler  : Failed delivery for (MessageId: ID-C02P377TG3QD-1511326411392-0-9 on ExchangeId: ID-C02P377TG3QD-1511326411392-0-8). Exhausted after delivery attempt: 1 caught: org.springframework.orm.jpa.JpaSystemException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.; nested exception is &lt;openjpa-2.4.1-r422266:1730418 fatal general error&gt; org.apache.openjpa.persistence.PersistenceException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.
+FailedObject: com.example.javastatefulk8s.model.ShipNotice@53e3de78
+
+Message History
+---------------------------------------------------------------------------------------------------------------------------------------
+RouteId              ProcessorId          Processor                                                                        Elapsed (ms)
+[route4            ] [route4            ] [seda://newAsnChannel                                                          ] [       155]
+[route4            ] [bean4             ] [bean[com.example.javastatefulk8s.processor.ShipNoticeSaveProcessor@6183e957]  ] [         5]
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+
+org.springframework.orm.jpa.JpaSystemException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.; nested exception is &lt;openjpa-2.4.1-r422266:1730418 fatal general error&gt; org.apache.openjpa.persistence.PersistenceException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.
+FailedObject: com.example.javastatefulk8s.model.ShipNotice@53e3de78
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.convertJpaAccessExceptionIfPossible(EntityManagerFactoryUtils.java:418) ~[spring-orm-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.orm.jpa.DefaultJpaDialect.translateExceptionIfPossible(DefaultJpaDialect.java:122) ~[spring-orm-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:521) ~[spring-orm-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:761) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:730) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:504) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:292) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:133) ~[spring-data-jpa-1.11.8.RELEASE.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:57) ~[spring-data-commons-1.13.8.RELEASE.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at com.sun.proxy.$Proxy97.save(Unknown Source) ~[na:na]
+	at org.springframework.data.repository.CrudRepository$save.call(Unknown Source) ~[na:na]
+	at com.example.javastatefulk8s.processor.ShipNoticeSaveProcessor.saveShipNotice(ShipNoticeSaveProcessor.groovy:18) ~[main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_91]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_91]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_91]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_91]
+	at org.apache.camel.component.bean.MethodInfo.invoke(MethodInfo.java:478) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.bean.MethodInfo$1.doProceed(MethodInfo.java:297) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.bean.MethodInfo$1.proceed(MethodInfo.java:270) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.bean.AbstractBeanProcessor.process(AbstractBeanProcessor.java:187) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.bean.BeanProcessor.process(BeanProcessor.java:53) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:138) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:101) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.MulticastProcessor.doProcessSequential(MulticastProcessor.java:700) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.MulticastProcessor.doProcessSequential(MulticastProcessor.java:623) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.MulticastProcessor.process(MulticastProcessor.java:247) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.Splitter.process(Splitter.java:114) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.seda.SedaConsumer.sendToConsumers(SedaConsumer.java:298) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.seda.SedaConsumer.doRun(SedaConsumer.java:210) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.seda.SedaConsumer.run(SedaConsumer.java:155) [camel-core-2.20.0.jar:2.20.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_91]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_91]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+Caused by: org.apache.openjpa.persistence.PersistenceException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.
+	at org.apache.openjpa.kernel.BrokerImpl.newFlushException(BrokerImpl.java:2368) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.BrokerImpl.flush(BrokerImpl.java:2205) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.BrokerImpl.flushSafe(BrokerImpl.java:2103) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.BrokerImpl.beforeCompletion(BrokerImpl.java:2021) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.LocalManagedRuntime.commit(LocalManagedRuntime.java:81) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.BrokerImpl.commit(BrokerImpl.java:1526) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.DelegatingBroker.commit(DelegatingBroker.java:932) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.persistence.EntityManagerImpl.commit(EntityManagerImpl.java:571) ~[openjpa-persistence-2.4.1.jar:2.4.1]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:517) ~[spring-orm-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	... 46 common frames omitted
+Caused by: org.apache.openjpa.persistence.PersistenceException: ERROR: null value in column &quot;customer&quot; violates not-null constraint
+  Detail: Failing row contains (4, null, 2017-11-22T04:53:34.094Z, null, 0). {prepstmnt 456519821 INSERT INTO ship_notice_req (vin, customer, duration, message_process_time, message_origin_time) VALUES (?, ?, ?, ?, ?)} [code=0, state=23502]
+	at org.apache.openjpa.jdbc.sql.DBDictionary.narrow(DBDictionary.java:4997) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.sql.DBDictionary.newStoreException(DBDictionary.java:4963) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.sql.SQLExceptions.getStore(SQLExceptions.java:133) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.sql.SQLExceptions.getStore(SQLExceptions.java:75) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.flushAndUpdate(PreparedStatementManagerImpl.java:144) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.BatchingPreparedStatementManagerImpl.flushAndUpdate(BatchingPreparedStatementManagerImpl.java:79) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.flushInternal(PreparedStatementManagerImpl.java:100) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.flush(PreparedStatementManagerImpl.java:88) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.ConstraintUpdateManager.flush(ConstraintUpdateManager.java:550) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.ConstraintUpdateManager.flush(ConstraintUpdateManager.java:106) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.BatchingConstraintUpdateManager.flush(BatchingConstraintUpdateManager.java:59) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.AbstractUpdateManager.flush(AbstractUpdateManager.java:104) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.AbstractUpdateManager.flush(AbstractUpdateManager.java:77) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.JDBCStoreManager.flush(JDBCStoreManager.java:731) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.DelegatingStoreManager.flush(DelegatingStoreManager.java:131) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	... 54 common frames omitted
+Caused by: org.apache.openjpa.lib.jdbc.ReportingSQLException: ERROR: null value in column &quot;customer&quot; violates not-null constraint
+  Detail: Failing row contains (4, null, 2017-11-22T04:53:34.094Z, null, 0). {prepstmnt 456519821 INSERT INTO ship_notice_req (vin, customer, duration, message_process_time, message_origin_time) VALUES (?, ?, ?, ?, ?)} [code=0, state=23502]
+	at org.apache.openjpa.lib.jdbc.LoggingConnectionDecorator.wrap(LoggingConnectionDecorator.java:218) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.LoggingConnectionDecorator.wrap(LoggingConnectionDecorator.java:194) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.LoggingConnectionDecorator.access$1000(LoggingConnectionDecorator.java:58) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.LoggingConnectionDecorator$LoggingConnection$LoggingPreparedStatement.executeUpdate(LoggingConnectionDecorator.java:1133) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:275) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:275) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.JDBCStoreManager$CancelPreparedStatement.executeUpdate(JDBCStoreManager.java:1791) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.executeUpdate(PreparedStatementManagerImpl.java:268) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.flushAndUpdate(PreparedStatementManagerImpl.java:119) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	... 64 common frames omitted
+
+2017-11-21 22:53:35.253 ERROR 62383 --- [//newAsnChannel] o.a.camel.processor.DefaultErrorHandler  : Failed delivery for (MessageId: ID-C02P377TG3QD-1511326411392-0-15 on ExchangeId: ID-C02P377TG3QD-1511326411392-0-14). Exhausted after delivery attempt: 1 caught: org.springframework.orm.jpa.JpaSystemException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.; nested exception is &lt;openjpa-2.4.1-r422266:1730418 fatal general error&gt; org.apache.openjpa.persistence.PersistenceException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.
+FailedObject: com.example.javastatefulk8s.model.ShipNotice@24f46c6
+
+Message History
+---------------------------------------------------------------------------------------------------------------------------------------
+RouteId              ProcessorId          Processor                                                                        Elapsed (ms)
+[route4            ] [route4            ] [seda://newAsnChannel                                                          ] [       203]
+[route4            ] [bean4             ] [bean[com.example.javastatefulk8s.processor.ShipNoticeSaveProcessor@6183e957]  ] [         5]
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+
+org.springframework.orm.jpa.JpaSystemException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.; nested exception is &lt;openjpa-2.4.1-r422266:1730418 fatal general error&gt; org.apache.openjpa.persistence.PersistenceException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.
+FailedObject: com.example.javastatefulk8s.model.ShipNotice@24f46c6
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.convertJpaAccessExceptionIfPossible(EntityManagerFactoryUtils.java:418) ~[spring-orm-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.orm.jpa.DefaultJpaDialect.translateExceptionIfPossible(DefaultJpaDialect.java:122) ~[spring-orm-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:521) ~[spring-orm-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:761) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:730) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:504) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:292) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:133) ~[spring-data-jpa-1.11.8.RELEASE.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:57) ~[spring-data-commons-1.13.8.RELEASE.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at com.sun.proxy.$Proxy97.save(Unknown Source) ~[na:na]
+	at org.springframework.data.repository.CrudRepository$save.call(Unknown Source) ~[na:na]
+	at com.example.javastatefulk8s.processor.ShipNoticeSaveProcessor.saveShipNotice(ShipNoticeSaveProcessor.groovy:18) ~[main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_91]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_91]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_91]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_91]
+	at org.apache.camel.component.bean.MethodInfo.invoke(MethodInfo.java:478) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.bean.MethodInfo$1.doProceed(MethodInfo.java:297) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.bean.MethodInfo$1.proceed(MethodInfo.java:270) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.bean.AbstractBeanProcessor.process(AbstractBeanProcessor.java:187) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.bean.BeanProcessor.process(BeanProcessor.java:53) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:138) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:101) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.MulticastProcessor.doProcessSequential(MulticastProcessor.java:700) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.MulticastProcessor.doProcessSequential(MulticastProcessor.java:623) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.MulticastProcessor.process(MulticastProcessor.java:247) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.Splitter.process(Splitter.java:114) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.seda.SedaConsumer.sendToConsumers(SedaConsumer.java:298) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.seda.SedaConsumer.doRun(SedaConsumer.java:210) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.seda.SedaConsumer.run(SedaConsumer.java:155) [camel-core-2.20.0.jar:2.20.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_91]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_91]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+Caused by: org.apache.openjpa.persistence.PersistenceException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.
+	at org.apache.openjpa.kernel.BrokerImpl.newFlushException(BrokerImpl.java:2368) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.BrokerImpl.flush(BrokerImpl.java:2205) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.BrokerImpl.flushSafe(BrokerImpl.java:2103) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.BrokerImpl.beforeCompletion(BrokerImpl.java:2021) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.LocalManagedRuntime.commit(LocalManagedRuntime.java:81) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.BrokerImpl.commit(BrokerImpl.java:1526) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.DelegatingBroker.commit(DelegatingBroker.java:932) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.persistence.EntityManagerImpl.commit(EntityManagerImpl.java:571) ~[openjpa-persistence-2.4.1.jar:2.4.1]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:517) ~[spring-orm-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	... 46 common frames omitted
+Caused by: org.apache.openjpa.persistence.PersistenceException: ERROR: null value in column &quot;customer&quot; violates not-null constraint
+  Detail: Failing row contains (9, null, 2017-11-22T04:53:34.095Z, null, 0). {prepstmnt 438706531 INSERT INTO ship_notice_req (vin, customer, duration, message_process_time, message_origin_time) VALUES (?, ?, ?, ?, ?)} [code=0, state=23502]
+	at org.apache.openjpa.jdbc.sql.DBDictionary.narrow(DBDictionary.java:4997) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.sql.DBDictionary.newStoreException(DBDictionary.java:4963) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.sql.SQLExceptions.getStore(SQLExceptions.java:133) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.sql.SQLExceptions.getStore(SQLExceptions.java:75) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.flushAndUpdate(PreparedStatementManagerImpl.java:144) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.BatchingPreparedStatementManagerImpl.flushAndUpdate(BatchingPreparedStatementManagerImpl.java:79) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.flushInternal(PreparedStatementManagerImpl.java:100) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.flush(PreparedStatementManagerImpl.java:88) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.ConstraintUpdateManager.flush(ConstraintUpdateManager.java:550) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.ConstraintUpdateManager.flush(ConstraintUpdateManager.java:106) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.BatchingConstraintUpdateManager.flush(BatchingConstraintUpdateManager.java:59) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.AbstractUpdateManager.flush(AbstractUpdateManager.java:104) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.AbstractUpdateManager.flush(AbstractUpdateManager.java:77) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.JDBCStoreManager.flush(JDBCStoreManager.java:731) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.DelegatingStoreManager.flush(DelegatingStoreManager.java:131) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	... 54 common frames omitted
+Caused by: org.apache.openjpa.lib.jdbc.ReportingSQLException: ERROR: null value in column &quot;customer&quot; violates not-null constraint
+  Detail: Failing row contains (9, null, 2017-11-22T04:53:34.095Z, null, 0). {prepstmnt 438706531 INSERT INTO ship_notice_req (vin, customer, duration, message_process_time, message_origin_time) VALUES (?, ?, ?, ?, ?)} [code=0, state=23502]
+	at org.apache.openjpa.lib.jdbc.LoggingConnectionDecorator.wrap(LoggingConnectionDecorator.java:218) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.LoggingConnectionDecorator.wrap(LoggingConnectionDecorator.java:194) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.LoggingConnectionDecorator.access$1000(LoggingConnectionDecorator.java:58) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.LoggingConnectionDecorator$LoggingConnection$LoggingPreparedStatement.executeUpdate(LoggingConnectionDecorator.java:1133) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:275) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:275) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.JDBCStoreManager$CancelPreparedStatement.executeUpdate(JDBCStoreManager.java:1791) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.executeUpdate(PreparedStatementManagerImpl.java:268) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.flushAndUpdate(PreparedStatementManagerImpl.java:119) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	... 64 common frames omitted
+
+2017-11-21 22:53:35.331 ERROR 62383 --- [//newAsnChannel] o.a.camel.processor.DefaultErrorHandler  : Failed delivery for (MessageId: ID-C02P377TG3QD-1511326411392-0-23 on ExchangeId: ID-C02P377TG3QD-1511326411392-0-22). Exhausted after delivery attempt: 1 caught: org.springframework.orm.jpa.JpaSystemException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.; nested exception is &lt;openjpa-2.4.1-r422266:1730418 fatal general error&gt; org.apache.openjpa.persistence.PersistenceException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.
+FailedObject: com.example.javastatefulk8s.model.ShipNotice@45b92224
+
+Message History
+---------------------------------------------------------------------------------------------------------------------------------------
+RouteId              ProcessorId          Processor                                                                        Elapsed (ms)
+[route4            ] [route4            ] [seda://newAsnChannel                                                          ] [       281]
+[route4            ] [bean4             ] [bean[com.example.javastatefulk8s.processor.ShipNoticeSaveProcessor@6183e957]  ] [         7]
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+
+org.springframework.orm.jpa.JpaSystemException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.; nested exception is &lt;openjpa-2.4.1-r422266:1730418 fatal general error&gt; org.apache.openjpa.persistence.PersistenceException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.
+FailedObject: com.example.javastatefulk8s.model.ShipNotice@45b92224
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.convertJpaAccessExceptionIfPossible(EntityManagerFactoryUtils.java:418) ~[spring-orm-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.orm.jpa.DefaultJpaDialect.translateExceptionIfPossible(DefaultJpaDialect.java:122) ~[spring-orm-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:521) ~[spring-orm-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:761) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:730) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:504) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:292) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:133) ~[spring-data-jpa-1.11.8.RELEASE.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:57) ~[spring-data-commons-1.13.8.RELEASE.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at com.sun.proxy.$Proxy97.save(Unknown Source) ~[na:na]
+	at org.springframework.data.repository.CrudRepository$save.call(Unknown Source) ~[na:na]
+	at com.example.javastatefulk8s.processor.ShipNoticeSaveProcessor.saveShipNotice(ShipNoticeSaveProcessor.groovy:18) ~[main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_91]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_91]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_91]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_91]
+	at org.apache.camel.component.bean.MethodInfo.invoke(MethodInfo.java:478) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.bean.MethodInfo$1.doProceed(MethodInfo.java:297) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.bean.MethodInfo$1.proceed(MethodInfo.java:270) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.bean.AbstractBeanProcessor.process(AbstractBeanProcessor.java:187) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.bean.BeanProcessor.process(BeanProcessor.java:53) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:138) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:101) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.MulticastProcessor.doProcessSequential(MulticastProcessor.java:700) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.MulticastProcessor.doProcessSequential(MulticastProcessor.java:623) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.MulticastProcessor.process(MulticastProcessor.java:247) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.Splitter.process(Splitter.java:114) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.seda.SedaConsumer.sendToConsumers(SedaConsumer.java:298) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.seda.SedaConsumer.doRun(SedaConsumer.java:210) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.seda.SedaConsumer.run(SedaConsumer.java:155) [camel-core-2.20.0.jar:2.20.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_91]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_91]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+Caused by: org.apache.openjpa.persistence.PersistenceException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.
+	at org.apache.openjpa.kernel.BrokerImpl.newFlushException(BrokerImpl.java:2368) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.BrokerImpl.flush(BrokerImpl.java:2205) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.BrokerImpl.flushSafe(BrokerImpl.java:2103) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.BrokerImpl.beforeCompletion(BrokerImpl.java:2021) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.LocalManagedRuntime.commit(LocalManagedRuntime.java:81) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.BrokerImpl.commit(BrokerImpl.java:1526) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.DelegatingBroker.commit(DelegatingBroker.java:932) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.persistence.EntityManagerImpl.commit(EntityManagerImpl.java:571) ~[openjpa-persistence-2.4.1.jar:2.4.1]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:517) ~[spring-orm-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	... 46 common frames omitted
+Caused by: org.apache.openjpa.persistence.PersistenceException: ERROR: null value in column &quot;customer&quot; violates not-null constraint
+  Detail: Failing row contains (16, null, 2017-11-22T04:53:34.095Z, null, 0). {prepstmnt 595220844 INSERT INTO ship_notice_req (vin, customer, duration, message_process_time, message_origin_time) VALUES (?, ?, ?, ?, ?)} [code=0, state=23502]
+	at org.apache.openjpa.jdbc.sql.DBDictionary.narrow(DBDictionary.java:4997) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.sql.DBDictionary.newStoreException(DBDictionary.java:4963) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.sql.SQLExceptions.getStore(SQLExceptions.java:133) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.sql.SQLExceptions.getStore(SQLExceptions.java:75) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.flushAndUpdate(PreparedStatementManagerImpl.java:144) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.BatchingPreparedStatementManagerImpl.flushAndUpdate(BatchingPreparedStatementManagerImpl.java:79) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.flushInternal(PreparedStatementManagerImpl.java:100) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.flush(PreparedStatementManagerImpl.java:88) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.ConstraintUpdateManager.flush(ConstraintUpdateManager.java:550) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.ConstraintUpdateManager.flush(ConstraintUpdateManager.java:106) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.BatchingConstraintUpdateManager.flush(BatchingConstraintUpdateManager.java:59) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.AbstractUpdateManager.flush(AbstractUpdateManager.java:104) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.AbstractUpdateManager.flush(AbstractUpdateManager.java:77) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.JDBCStoreManager.flush(JDBCStoreManager.java:731) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.DelegatingStoreManager.flush(DelegatingStoreManager.java:131) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	... 54 common frames omitted
+Caused by: org.apache.openjpa.lib.jdbc.ReportingSQLException: ERROR: null value in column &quot;customer&quot; violates not-null constraint
+  Detail: Failing row contains (16, null, 2017-11-22T04:53:34.095Z, null, 0). {prepstmnt 595220844 INSERT INTO ship_notice_req (vin, customer, duration, message_process_time, message_origin_time) VALUES (?, ?, ?, ?, ?)} [code=0, state=23502]
+	at org.apache.openjpa.lib.jdbc.LoggingConnectionDecorator.wrap(LoggingConnectionDecorator.java:218) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.LoggingConnectionDecorator.wrap(LoggingConnectionDecorator.java:194) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.LoggingConnectionDecorator.access$1000(LoggingConnectionDecorator.java:58) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.LoggingConnectionDecorator$LoggingConnection$LoggingPreparedStatement.executeUpdate(LoggingConnectionDecorator.java:1133) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:275) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:275) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.JDBCStoreManager$CancelPreparedStatement.executeUpdate(JDBCStoreManager.java:1791) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.executeUpdate(PreparedStatementManagerImpl.java:268) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.flushAndUpdate(PreparedStatementManagerImpl.java:119) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	... 64 common frames omitted
+
+2017-11-21 22:53:35.398 ERROR 62383 --- [//newAsnChannel] o.a.camel.processor.DefaultErrorHandler  : Failed delivery for (MessageId: ID-C02P377TG3QD-1511326411392-0-28 on ExchangeId: ID-C02P377TG3QD-1511326411392-0-27). Exhausted after delivery attempt: 1 caught: org.springframework.orm.jpa.JpaSystemException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.; nested exception is &lt;openjpa-2.4.1-r422266:1730418 fatal general error&gt; org.apache.openjpa.persistence.PersistenceException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.
+FailedObject: com.example.javastatefulk8s.model.ShipNotice@59536ca3
+
+Message History
+---------------------------------------------------------------------------------------------------------------------------------------
+RouteId              ProcessorId          Processor                                                                        Elapsed (ms)
+[route4            ] [route4            ] [seda://newAsnChannel                                                          ] [       348]
+[route4            ] [bean4             ] [bean[com.example.javastatefulk8s.processor.ShipNoticeSaveProcessor@6183e957]  ] [         5]
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+
+org.springframework.orm.jpa.JpaSystemException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.; nested exception is &lt;openjpa-2.4.1-r422266:1730418 fatal general error&gt; org.apache.openjpa.persistence.PersistenceException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.
+FailedObject: com.example.javastatefulk8s.model.ShipNotice@59536ca3
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.convertJpaAccessExceptionIfPossible(EntityManagerFactoryUtils.java:418) ~[spring-orm-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.orm.jpa.DefaultJpaDialect.translateExceptionIfPossible(DefaultJpaDialect.java:122) ~[spring-orm-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:521) ~[spring-orm-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:761) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:730) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:504) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:292) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:133) ~[spring-data-jpa-1.11.8.RELEASE.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:57) ~[spring-data-commons-1.13.8.RELEASE.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at com.sun.proxy.$Proxy97.save(Unknown Source) ~[na:na]
+	at org.springframework.data.repository.CrudRepository$save.call(Unknown Source) ~[na:na]
+	at com.example.javastatefulk8s.processor.ShipNoticeSaveProcessor.saveShipNotice(ShipNoticeSaveProcessor.groovy:18) ~[main/:na]
+	at sun.reflect.GeneratedMethodAccessor77.invoke(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_91]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_91]
+	at org.apache.camel.component.bean.MethodInfo.invoke(MethodInfo.java:478) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.bean.MethodInfo$1.doProceed(MethodInfo.java:297) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.bean.MethodInfo$1.proceed(MethodInfo.java:270) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.bean.AbstractBeanProcessor.process(AbstractBeanProcessor.java:187) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.bean.BeanProcessor.process(BeanProcessor.java:53) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:138) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:101) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.MulticastProcessor.doProcessSequential(MulticastProcessor.java:700) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.MulticastProcessor.doProcessSequential(MulticastProcessor.java:623) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.MulticastProcessor.process(MulticastProcessor.java:247) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.Splitter.process(Splitter.java:114) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.seda.SedaConsumer.sendToConsumers(SedaConsumer.java:298) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.seda.SedaConsumer.doRun(SedaConsumer.java:210) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.seda.SedaConsumer.run(SedaConsumer.java:155) [camel-core-2.20.0.jar:2.20.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_91]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_91]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+Caused by: org.apache.openjpa.persistence.PersistenceException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.
+	at org.apache.openjpa.kernel.BrokerImpl.newFlushException(BrokerImpl.java:2368) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.BrokerImpl.flush(BrokerImpl.java:2205) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.BrokerImpl.flushSafe(BrokerImpl.java:2103) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.BrokerImpl.beforeCompletion(BrokerImpl.java:2021) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.LocalManagedRuntime.commit(LocalManagedRuntime.java:81) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.BrokerImpl.commit(BrokerImpl.java:1526) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.DelegatingBroker.commit(DelegatingBroker.java:932) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.persistence.EntityManagerImpl.commit(EntityManagerImpl.java:571) ~[openjpa-persistence-2.4.1.jar:2.4.1]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:517) ~[spring-orm-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	... 45 common frames omitted
+Caused by: org.apache.openjpa.persistence.PersistenceException: ERROR: null value in column &quot;customer&quot; violates not-null constraint
+  Detail: Failing row contains (20, null, 2017-11-22T04:53:34.096Z, null, 0). {prepstmnt 1028218753 INSERT INTO ship_notice_req (vin, customer, duration, message_process_time, message_origin_time) VALUES (?, ?, ?, ?, ?)} [code=0, state=23502]
+	at org.apache.openjpa.jdbc.sql.DBDictionary.narrow(DBDictionary.java:4997) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.sql.DBDictionary.newStoreException(DBDictionary.java:4963) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.sql.SQLExceptions.getStore(SQLExceptions.java:133) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.sql.SQLExceptions.getStore(SQLExceptions.java:75) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.flushAndUpdate(PreparedStatementManagerImpl.java:144) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.BatchingPreparedStatementManagerImpl.flushAndUpdate(BatchingPreparedStatementManagerImpl.java:79) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.flushInternal(PreparedStatementManagerImpl.java:100) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.flush(PreparedStatementManagerImpl.java:88) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.ConstraintUpdateManager.flush(ConstraintUpdateManager.java:550) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.ConstraintUpdateManager.flush(ConstraintUpdateManager.java:106) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.BatchingConstraintUpdateManager.flush(BatchingConstraintUpdateManager.java:59) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.AbstractUpdateManager.flush(AbstractUpdateManager.java:104) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.AbstractUpdateManager.flush(AbstractUpdateManager.java:77) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.JDBCStoreManager.flush(JDBCStoreManager.java:731) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.DelegatingStoreManager.flush(DelegatingStoreManager.java:131) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	... 53 common frames omitted
+Caused by: org.apache.openjpa.lib.jdbc.ReportingSQLException: ERROR: null value in column &quot;customer&quot; violates not-null constraint
+  Detail: Failing row contains (20, null, 2017-11-22T04:53:34.096Z, null, 0). {prepstmnt 1028218753 INSERT INTO ship_notice_req (vin, customer, duration, message_process_time, message_origin_time) VALUES (?, ?, ?, ?, ?)} [code=0, state=23502]
+	at org.apache.openjpa.lib.jdbc.LoggingConnectionDecorator.wrap(LoggingConnectionDecorator.java:218) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.LoggingConnectionDecorator.wrap(LoggingConnectionDecorator.java:194) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.LoggingConnectionDecorator.access$1000(LoggingConnectionDecorator.java:58) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.LoggingConnectionDecorator$LoggingConnection$LoggingPreparedStatement.executeUpdate(LoggingConnectionDecorator.java:1133) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:275) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:275) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.JDBCStoreManager$CancelPreparedStatement.executeUpdate(JDBCStoreManager.java:1791) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.executeUpdate(PreparedStatementManagerImpl.java:268) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.flushAndUpdate(PreparedStatementManagerImpl.java:119) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	... 63 common frames omitted
+
+2017-11-21 22:53:35.406 ERROR 62383 --- [//newAsnChannel] o.a.camel.processor.DefaultErrorHandler  : Failed delivery for (MessageId: ID-C02P377TG3QD-1511326411392-0-30 on ExchangeId: ID-C02P377TG3QD-1511326411392-0-29). Exhausted after delivery attempt: 1 caught: org.springframework.orm.jpa.JpaSystemException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.; nested exception is &lt;openjpa-2.4.1-r422266:1730418 fatal general error&gt; org.apache.openjpa.persistence.PersistenceException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.
+FailedObject: com.example.javastatefulk8s.model.ShipNotice@76b54404
+
+Message History
+---------------------------------------------------------------------------------------------------------------------------------------
+RouteId              ProcessorId          Processor                                                                        Elapsed (ms)
+[route4            ] [route4            ] [seda://newAsnChannel                                                          ] [       356]
+[route4            ] [bean4             ] [bean[com.example.javastatefulk8s.processor.ShipNoticeSaveProcessor@6183e957]  ] [         4]
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+
+org.springframework.orm.jpa.JpaSystemException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.; nested exception is &lt;openjpa-2.4.1-r422266:1730418 fatal general error&gt; org.apache.openjpa.persistence.PersistenceException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.
+FailedObject: com.example.javastatefulk8s.model.ShipNotice@76b54404
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.convertJpaAccessExceptionIfPossible(EntityManagerFactoryUtils.java:418) ~[spring-orm-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.orm.jpa.DefaultJpaDialect.translateExceptionIfPossible(DefaultJpaDialect.java:122) ~[spring-orm-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:521) ~[spring-orm-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:761) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:730) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:504) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:292) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:133) ~[spring-data-jpa-1.11.8.RELEASE.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:57) ~[spring-data-commons-1.13.8.RELEASE.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at com.sun.proxy.$Proxy97.save(Unknown Source) ~[na:na]
+	at org.springframework.data.repository.CrudRepository$save.call(Unknown Source) ~[na:na]
+	at com.example.javastatefulk8s.processor.ShipNoticeSaveProcessor.saveShipNotice(ShipNoticeSaveProcessor.groovy:18) ~[main/:na]
+	at sun.reflect.GeneratedMethodAccessor77.invoke(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_91]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_91]
+	at org.apache.camel.component.bean.MethodInfo.invoke(MethodInfo.java:478) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.bean.MethodInfo$1.doProceed(MethodInfo.java:297) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.bean.MethodInfo$1.proceed(MethodInfo.java:270) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.bean.AbstractBeanProcessor.process(AbstractBeanProcessor.java:187) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.bean.BeanProcessor.process(BeanProcessor.java:53) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:138) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:101) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.MulticastProcessor.doProcessSequential(MulticastProcessor.java:700) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.MulticastProcessor.doProcessSequential(MulticastProcessor.java:623) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.MulticastProcessor.process(MulticastProcessor.java:247) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.Splitter.process(Splitter.java:114) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.seda.SedaConsumer.sendToConsumers(SedaConsumer.java:298) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.seda.SedaConsumer.doRun(SedaConsumer.java:210) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.seda.SedaConsumer.run(SedaConsumer.java:155) [camel-core-2.20.0.jar:2.20.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_91]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_91]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+Caused by: org.apache.openjpa.persistence.PersistenceException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.
+	at org.apache.openjpa.kernel.BrokerImpl.newFlushException(BrokerImpl.java:2368) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.BrokerImpl.flush(BrokerImpl.java:2205) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.BrokerImpl.flushSafe(BrokerImpl.java:2103) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.BrokerImpl.beforeCompletion(BrokerImpl.java:2021) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.LocalManagedRuntime.commit(LocalManagedRuntime.java:81) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.BrokerImpl.commit(BrokerImpl.java:1526) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.DelegatingBroker.commit(DelegatingBroker.java:932) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.persistence.EntityManagerImpl.commit(EntityManagerImpl.java:571) ~[openjpa-persistence-2.4.1.jar:2.4.1]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:517) ~[spring-orm-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	... 45 common frames omitted
+Caused by: org.apache.openjpa.persistence.PersistenceException: ERROR: null value in column &quot;customer&quot; violates not-null constraint
+  Detail: Failing row contains (21, null, 2017-11-22T04:53:34.096Z, null, 0). {prepstmnt 377777471 INSERT INTO ship_notice_req (vin, customer, duration, message_process_time, message_origin_time) VALUES (?, ?, ?, ?, ?)} [code=0, state=23502]
+	at org.apache.openjpa.jdbc.sql.DBDictionary.narrow(DBDictionary.java:4997) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.sql.DBDictionary.newStoreException(DBDictionary.java:4963) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.sql.SQLExceptions.getStore(SQLExceptions.java:133) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.sql.SQLExceptions.getStore(SQLExceptions.java:75) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.flushAndUpdate(PreparedStatementManagerImpl.java:144) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.BatchingPreparedStatementManagerImpl.flushAndUpdate(BatchingPreparedStatementManagerImpl.java:79) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.flushInternal(PreparedStatementManagerImpl.java:100) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.flush(PreparedStatementManagerImpl.java:88) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.ConstraintUpdateManager.flush(ConstraintUpdateManager.java:550) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.ConstraintUpdateManager.flush(ConstraintUpdateManager.java:106) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.BatchingConstraintUpdateManager.flush(BatchingConstraintUpdateManager.java:59) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.AbstractUpdateManager.flush(AbstractUpdateManager.java:104) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.AbstractUpdateManager.flush(AbstractUpdateManager.java:77) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.JDBCStoreManager.flush(JDBCStoreManager.java:731) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.DelegatingStoreManager.flush(DelegatingStoreManager.java:131) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	... 53 common frames omitted
+Caused by: org.apache.openjpa.lib.jdbc.ReportingSQLException: ERROR: null value in column &quot;customer&quot; violates not-null constraint
+  Detail: Failing row contains (21, null, 2017-11-22T04:53:34.096Z, null, 0). {prepstmnt 377777471 INSERT INTO ship_notice_req (vin, customer, duration, message_process_time, message_origin_time) VALUES (?, ?, ?, ?, ?)} [code=0, state=23502]
+	at org.apache.openjpa.lib.jdbc.LoggingConnectionDecorator.wrap(LoggingConnectionDecorator.java:218) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.LoggingConnectionDecorator.wrap(LoggingConnectionDecorator.java:194) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.LoggingConnectionDecorator.access$1000(LoggingConnectionDecorator.java:58) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.LoggingConnectionDecorator$LoggingConnection$LoggingPreparedStatement.executeUpdate(LoggingConnectionDecorator.java:1133) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:275) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:275) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.JDBCStoreManager$CancelPreparedStatement.executeUpdate(JDBCStoreManager.java:1791) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.executeUpdate(PreparedStatementManagerImpl.java:268) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.flushAndUpdate(PreparedStatementManagerImpl.java:119) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	... 63 common frames omitted
+
+2017-11-21 22:53:35.413 ERROR 62383 --- [//newAsnChannel] o.a.camel.processor.DefaultErrorHandler  : Failed delivery for (MessageId: ID-C02P377TG3QD-1511326411392-0-32 on ExchangeId: ID-C02P377TG3QD-1511326411392-0-31). Exhausted after delivery attempt: 1 caught: org.springframework.orm.jpa.JpaSystemException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.; nested exception is &lt;openjpa-2.4.1-r422266:1730418 fatal general error&gt; org.apache.openjpa.persistence.PersistenceException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.
+FailedObject: com.example.javastatefulk8s.model.ShipNotice@158141c0
+
+Message History
+---------------------------------------------------------------------------------------------------------------------------------------
+RouteId              ProcessorId          Processor                                                                        Elapsed (ms)
+[route4            ] [route4            ] [seda://newAsnChannel                                                          ] [       363]
+[route4            ] [bean4             ] [bean[com.example.javastatefulk8s.processor.ShipNoticeSaveProcessor@6183e957]  ] [         3]
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+
+org.springframework.orm.jpa.JpaSystemException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.; nested exception is &lt;openjpa-2.4.1-r422266:1730418 fatal general error&gt; org.apache.openjpa.persistence.PersistenceException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.
+FailedObject: com.example.javastatefulk8s.model.ShipNotice@158141c0
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.convertJpaAccessExceptionIfPossible(EntityManagerFactoryUtils.java:418) ~[spring-orm-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.orm.jpa.DefaultJpaDialect.translateExceptionIfPossible(DefaultJpaDialect.java:122) ~[spring-orm-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:521) ~[spring-orm-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:761) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:730) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:504) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:292) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:133) ~[spring-data-jpa-1.11.8.RELEASE.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:57) ~[spring-data-commons-1.13.8.RELEASE.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at com.sun.proxy.$Proxy97.save(Unknown Source) ~[na:na]
+	at org.springframework.data.repository.CrudRepository$save.call(Unknown Source) ~[na:na]
+	at com.example.javastatefulk8s.processor.ShipNoticeSaveProcessor.saveShipNotice(ShipNoticeSaveProcessor.groovy:18) ~[main/:na]
+	at sun.reflect.GeneratedMethodAccessor77.invoke(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_91]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_91]
+	at org.apache.camel.component.bean.MethodInfo.invoke(MethodInfo.java:478) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.bean.MethodInfo$1.doProceed(MethodInfo.java:297) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.bean.MethodInfo$1.proceed(MethodInfo.java:270) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.bean.AbstractBeanProcessor.process(AbstractBeanProcessor.java:187) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.bean.BeanProcessor.process(BeanProcessor.java:53) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:138) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:101) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.MulticastProcessor.doProcessSequential(MulticastProcessor.java:700) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.MulticastProcessor.doProcessSequential(MulticastProcessor.java:623) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.MulticastProcessor.process(MulticastProcessor.java:247) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.Splitter.process(Splitter.java:114) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.seda.SedaConsumer.sendToConsumers(SedaConsumer.java:298) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.seda.SedaConsumer.doRun(SedaConsumer.java:210) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.seda.SedaConsumer.run(SedaConsumer.java:155) [camel-core-2.20.0.jar:2.20.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_91]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_91]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+Caused by: org.apache.openjpa.persistence.PersistenceException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.
+	at org.apache.openjpa.kernel.BrokerImpl.newFlushException(BrokerImpl.java:2368) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.BrokerImpl.flush(BrokerImpl.java:2205) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.BrokerImpl.flushSafe(BrokerImpl.java:2103) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.BrokerImpl.beforeCompletion(BrokerImpl.java:2021) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.LocalManagedRuntime.commit(LocalManagedRuntime.java:81) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.BrokerImpl.commit(BrokerImpl.java:1526) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.DelegatingBroker.commit(DelegatingBroker.java:932) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.persistence.EntityManagerImpl.commit(EntityManagerImpl.java:571) ~[openjpa-persistence-2.4.1.jar:2.4.1]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:517) ~[spring-orm-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	... 45 common frames omitted
+Caused by: org.apache.openjpa.persistence.PersistenceException: ERROR: null value in column &quot;customer&quot; violates not-null constraint
+  Detail: Failing row contains (22, null, 2017-11-22T04:53:34.096Z, null, 0). {prepstmnt 117061704 INSERT INTO ship_notice_req (vin, customer, duration, message_process_time, message_origin_time) VALUES (?, ?, ?, ?, ?)} [code=0, state=23502]
+	at org.apache.openjpa.jdbc.sql.DBDictionary.narrow(DBDictionary.java:4997) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.sql.DBDictionary.newStoreException(DBDictionary.java:4963) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.sql.SQLExceptions.getStore(SQLExceptions.java:133) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.sql.SQLExceptions.getStore(SQLExceptions.java:75) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.flushAndUpdate(PreparedStatementManagerImpl.java:144) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.BatchingPreparedStatementManagerImpl.flushAndUpdate(BatchingPreparedStatementManagerImpl.java:79) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.flushInternal(PreparedStatementManagerImpl.java:100) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.flush(PreparedStatementManagerImpl.java:88) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.ConstraintUpdateManager.flush(ConstraintUpdateManager.java:550) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.ConstraintUpdateManager.flush(ConstraintUpdateManager.java:106) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.BatchingConstraintUpdateManager.flush(BatchingConstraintUpdateManager.java:59) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.AbstractUpdateManager.flush(AbstractUpdateManager.java:104) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.AbstractUpdateManager.flush(AbstractUpdateManager.java:77) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.JDBCStoreManager.flush(JDBCStoreManager.java:731) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.DelegatingStoreManager.flush(DelegatingStoreManager.java:131) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	... 53 common frames omitted
+Caused by: org.apache.openjpa.lib.jdbc.ReportingSQLException: ERROR: null value in column &quot;customer&quot; violates not-null constraint
+  Detail: Failing row contains (22, null, 2017-11-22T04:53:34.096Z, null, 0). {prepstmnt 117061704 INSERT INTO ship_notice_req (vin, customer, duration, message_process_time, message_origin_time) VALUES (?, ?, ?, ?, ?)} [code=0, state=23502]
+	at org.apache.openjpa.lib.jdbc.LoggingConnectionDecorator.wrap(LoggingConnectionDecorator.java:218) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.LoggingConnectionDecorator.wrap(LoggingConnectionDecorator.java:194) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.LoggingConnectionDecorator.access$1000(LoggingConnectionDecorator.java:58) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.LoggingConnectionDecorator$LoggingConnection$LoggingPreparedStatement.executeUpdate(LoggingConnectionDecorator.java:1133) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:275) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:275) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.JDBCStoreManager$CancelPreparedStatement.executeUpdate(JDBCStoreManager.java:1791) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.executeUpdate(PreparedStatementManagerImpl.java:268) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.flushAndUpdate(PreparedStatementManagerImpl.java:119) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	... 63 common frames omitted
+
+2017-11-21 22:53:35.421 ERROR 62383 --- [//newAsnChannel] o.a.camel.processor.DefaultErrorHandler  : Failed delivery for (MessageId: ID-C02P377TG3QD-1511326411392-0-34 on ExchangeId: ID-C02P377TG3QD-1511326411392-0-33). Exhausted after delivery attempt: 1 caught: org.springframework.orm.jpa.JpaSystemException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.; nested exception is &lt;openjpa-2.4.1-r422266:1730418 fatal general error&gt; org.apache.openjpa.persistence.PersistenceException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.
+FailedObject: com.example.javastatefulk8s.model.ShipNotice@a2ef4dc
+
+Message History
+---------------------------------------------------------------------------------------------------------------------------------------
+RouteId              ProcessorId          Processor                                                                        Elapsed (ms)
+[route4            ] [route4            ] [seda://newAsnChannel                                                          ] [       371]
+[route4            ] [bean4             ] [bean[com.example.javastatefulk8s.processor.ShipNoticeSaveProcessor@6183e957]  ] [         4]
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+
+org.springframework.orm.jpa.JpaSystemException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.; nested exception is &lt;openjpa-2.4.1-r422266:1730418 fatal general error&gt; org.apache.openjpa.persistence.PersistenceException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.
+FailedObject: com.example.javastatefulk8s.model.ShipNotice@a2ef4dc
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.convertJpaAccessExceptionIfPossible(EntityManagerFactoryUtils.java:418) ~[spring-orm-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.orm.jpa.DefaultJpaDialect.translateExceptionIfPossible(DefaultJpaDialect.java:122) ~[spring-orm-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:521) ~[spring-orm-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:761) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:730) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:504) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:292) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:133) ~[spring-data-jpa-1.11.8.RELEASE.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:57) ~[spring-data-commons-1.13.8.RELEASE.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at com.sun.proxy.$Proxy97.save(Unknown Source) ~[na:na]
+	at org.springframework.data.repository.CrudRepository$save.call(Unknown Source) ~[na:na]
+	at com.example.javastatefulk8s.processor.ShipNoticeSaveProcessor.saveShipNotice(ShipNoticeSaveProcessor.groovy:18) ~[main/:na]
+	at sun.reflect.GeneratedMethodAccessor77.invoke(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_91]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_91]
+	at org.apache.camel.component.bean.MethodInfo.invoke(MethodInfo.java:478) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.bean.MethodInfo$1.doProceed(MethodInfo.java:297) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.bean.MethodInfo$1.proceed(MethodInfo.java:270) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.bean.AbstractBeanProcessor.process(AbstractBeanProcessor.java:187) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.bean.BeanProcessor.process(BeanProcessor.java:53) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:138) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:101) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.MulticastProcessor.doProcessSequential(MulticastProcessor.java:700) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.MulticastProcessor.doProcessSequential(MulticastProcessor.java:623) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.MulticastProcessor.process(MulticastProcessor.java:247) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.Splitter.process(Splitter.java:114) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.seda.SedaConsumer.sendToConsumers(SedaConsumer.java:298) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.seda.SedaConsumer.doRun(SedaConsumer.java:210) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.seda.SedaConsumer.run(SedaConsumer.java:155) [camel-core-2.20.0.jar:2.20.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_91]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_91]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+Caused by: org.apache.openjpa.persistence.PersistenceException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.
+	at org.apache.openjpa.kernel.BrokerImpl.newFlushException(BrokerImpl.java:2368) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.BrokerImpl.flush(BrokerImpl.java:2205) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.BrokerImpl.flushSafe(BrokerImpl.java:2103) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.BrokerImpl.beforeCompletion(BrokerImpl.java:2021) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.LocalManagedRuntime.commit(LocalManagedRuntime.java:81) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.BrokerImpl.commit(BrokerImpl.java:1526) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.DelegatingBroker.commit(DelegatingBroker.java:932) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.persistence.EntityManagerImpl.commit(EntityManagerImpl.java:571) ~[openjpa-persistence-2.4.1.jar:2.4.1]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:517) ~[spring-orm-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	... 45 common frames omitted
+Caused by: org.apache.openjpa.persistence.PersistenceException: ERROR: null value in column &quot;customer&quot; violates not-null constraint
+  Detail: Failing row contains (23, null, 2017-11-22T04:53:34.097Z, null, 0). {prepstmnt 331094149 INSERT INTO ship_notice_req (vin, customer, duration, message_process_time, message_origin_time) VALUES (?, ?, ?, ?, ?)} [code=0, state=23502]
+	at org.apache.openjpa.jdbc.sql.DBDictionary.narrow(DBDictionary.java:4997) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.sql.DBDictionary.newStoreException(DBDictionary.java:4963) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.sql.SQLExceptions.getStore(SQLExceptions.java:133) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.sql.SQLExceptions.getStore(SQLExceptions.java:75) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.flushAndUpdate(PreparedStatementManagerImpl.java:144) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.BatchingPreparedStatementManagerImpl.flushAndUpdate(BatchingPreparedStatementManagerImpl.java:79) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.flushInternal(PreparedStatementManagerImpl.java:100) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.flush(PreparedStatementManagerImpl.java:88) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.ConstraintUpdateManager.flush(ConstraintUpdateManager.java:550) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.ConstraintUpdateManager.flush(ConstraintUpdateManager.java:106) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.BatchingConstraintUpdateManager.flush(BatchingConstraintUpdateManager.java:59) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.AbstractUpdateManager.flush(AbstractUpdateManager.java:104) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.AbstractUpdateManager.flush(AbstractUpdateManager.java:77) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.JDBCStoreManager.flush(JDBCStoreManager.java:731) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.DelegatingStoreManager.flush(DelegatingStoreManager.java:131) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	... 53 common frames omitted
+Caused by: org.apache.openjpa.lib.jdbc.ReportingSQLException: ERROR: null value in column &quot;customer&quot; violates not-null constraint
+  Detail: Failing row contains (23, null, 2017-11-22T04:53:34.097Z, null, 0). {prepstmnt 331094149 INSERT INTO ship_notice_req (vin, customer, duration, message_process_time, message_origin_time) VALUES (?, ?, ?, ?, ?)} [code=0, state=23502]
+	at org.apache.openjpa.lib.jdbc.LoggingConnectionDecorator.wrap(LoggingConnectionDecorator.java:218) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.LoggingConnectionDecorator.wrap(LoggingConnectionDecorator.java:194) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.LoggingConnectionDecorator.access$1000(LoggingConnectionDecorator.java:58) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.LoggingConnectionDecorator$LoggingConnection$LoggingPreparedStatement.executeUpdate(LoggingConnectionDecorator.java:1133) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:275) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:275) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.JDBCStoreManager$CancelPreparedStatement.executeUpdate(JDBCStoreManager.java:1791) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.executeUpdate(PreparedStatementManagerImpl.java:268) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.flushAndUpdate(PreparedStatementManagerImpl.java:119) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	... 63 common frames omitted
+
+2017-11-21 22:53:35.435 ERROR 62383 --- [//newAsnChannel] o.a.camel.processor.DefaultErrorHandler  : Failed delivery for (MessageId: ID-C02P377TG3QD-1511326411392-0-37 on ExchangeId: ID-C02P377TG3QD-1511326411392-0-36). Exhausted after delivery attempt: 1 caught: org.springframework.orm.jpa.JpaSystemException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.; nested exception is &lt;openjpa-2.4.1-r422266:1730418 fatal general error&gt; org.apache.openjpa.persistence.PersistenceException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.
+FailedObject: com.example.javastatefulk8s.model.ShipNotice@4ecd5db6
+
+Message History
+---------------------------------------------------------------------------------------------------------------------------------------
+RouteId              ProcessorId          Processor                                                                        Elapsed (ms)
+[route4            ] [route4            ] [seda://newAsnChannel                                                          ] [       385]
+[route4            ] [bean4             ] [bean[com.example.javastatefulk8s.processor.ShipNoticeSaveProcessor@6183e957]  ] [         3]
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+
+org.springframework.orm.jpa.JpaSystemException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.; nested exception is &lt;openjpa-2.4.1-r422266:1730418 fatal general error&gt; org.apache.openjpa.persistence.PersistenceException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.
+FailedObject: com.example.javastatefulk8s.model.ShipNotice@4ecd5db6
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.convertJpaAccessExceptionIfPossible(EntityManagerFactoryUtils.java:418) ~[spring-orm-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.orm.jpa.DefaultJpaDialect.translateExceptionIfPossible(DefaultJpaDialect.java:122) ~[spring-orm-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:521) ~[spring-orm-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:761) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:730) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:504) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:292) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:133) ~[spring-data-jpa-1.11.8.RELEASE.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:57) ~[spring-data-commons-1.13.8.RELEASE.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at com.sun.proxy.$Proxy97.save(Unknown Source) ~[na:na]
+	at org.springframework.data.repository.CrudRepository$save.call(Unknown Source) ~[na:na]
+	at com.example.javastatefulk8s.processor.ShipNoticeSaveProcessor.saveShipNotice(ShipNoticeSaveProcessor.groovy:18) ~[main/:na]
+	at sun.reflect.GeneratedMethodAccessor77.invoke(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_91]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_91]
+	at org.apache.camel.component.bean.MethodInfo.invoke(MethodInfo.java:478) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.bean.MethodInfo$1.doProceed(MethodInfo.java:297) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.bean.MethodInfo$1.proceed(MethodInfo.java:270) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.bean.AbstractBeanProcessor.process(AbstractBeanProcessor.java:187) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.bean.BeanProcessor.process(BeanProcessor.java:53) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:138) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:101) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.MulticastProcessor.doProcessSequential(MulticastProcessor.java:700) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.MulticastProcessor.doProcessSequential(MulticastProcessor.java:623) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.MulticastProcessor.process(MulticastProcessor.java:247) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.Splitter.process(Splitter.java:114) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.seda.SedaConsumer.sendToConsumers(SedaConsumer.java:298) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.seda.SedaConsumer.doRun(SedaConsumer.java:210) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.seda.SedaConsumer.run(SedaConsumer.java:155) [camel-core-2.20.0.jar:2.20.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_91]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_91]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+Caused by: org.apache.openjpa.persistence.PersistenceException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.
+	at org.apache.openjpa.kernel.BrokerImpl.newFlushException(BrokerImpl.java:2368) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.BrokerImpl.flush(BrokerImpl.java:2205) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.BrokerImpl.flushSafe(BrokerImpl.java:2103) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.BrokerImpl.beforeCompletion(BrokerImpl.java:2021) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.LocalManagedRuntime.commit(LocalManagedRuntime.java:81) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.BrokerImpl.commit(BrokerImpl.java:1526) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.DelegatingBroker.commit(DelegatingBroker.java:932) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.persistence.EntityManagerImpl.commit(EntityManagerImpl.java:571) ~[openjpa-persistence-2.4.1.jar:2.4.1]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:517) ~[spring-orm-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	... 45 common frames omitted
+Caused by: org.apache.openjpa.persistence.PersistenceException: ERROR: null value in column &quot;customer&quot; violates not-null constraint
+  Detail: Failing row contains (25, null, 2017-11-22T04:53:34.097Z, null, 0). {prepstmnt 1086286255 INSERT INTO ship_notice_req (vin, customer, duration, message_process_time, message_origin_time) VALUES (?, ?, ?, ?, ?)} [code=0, state=23502]
+	at org.apache.openjpa.jdbc.sql.DBDictionary.narrow(DBDictionary.java:4997) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.sql.DBDictionary.newStoreException(DBDictionary.java:4963) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.sql.SQLExceptions.getStore(SQLExceptions.java:133) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.sql.SQLExceptions.getStore(SQLExceptions.java:75) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.flushAndUpdate(PreparedStatementManagerImpl.java:144) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.BatchingPreparedStatementManagerImpl.flushAndUpdate(BatchingPreparedStatementManagerImpl.java:79) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.flushInternal(PreparedStatementManagerImpl.java:100) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.flush(PreparedStatementManagerImpl.java:88) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.ConstraintUpdateManager.flush(ConstraintUpdateManager.java:550) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.ConstraintUpdateManager.flush(ConstraintUpdateManager.java:106) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.BatchingConstraintUpdateManager.flush(BatchingConstraintUpdateManager.java:59) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.AbstractUpdateManager.flush(AbstractUpdateManager.java:104) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.AbstractUpdateManager.flush(AbstractUpdateManager.java:77) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.JDBCStoreManager.flush(JDBCStoreManager.java:731) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.DelegatingStoreManager.flush(DelegatingStoreManager.java:131) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	... 53 common frames omitted
+Caused by: org.apache.openjpa.lib.jdbc.ReportingSQLException: ERROR: null value in column &quot;customer&quot; violates not-null constraint
+  Detail: Failing row contains (25, null, 2017-11-22T04:53:34.097Z, null, 0). {prepstmnt 1086286255 INSERT INTO ship_notice_req (vin, customer, duration, message_process_time, message_origin_time) VALUES (?, ?, ?, ?, ?)} [code=0, state=23502]
+	at org.apache.openjpa.lib.jdbc.LoggingConnectionDecorator.wrap(LoggingConnectionDecorator.java:218) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.LoggingConnectionDecorator.wrap(LoggingConnectionDecorator.java:194) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.LoggingConnectionDecorator.access$1000(LoggingConnectionDecorator.java:58) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.LoggingConnectionDecorator$LoggingConnection$LoggingPreparedStatement.executeUpdate(LoggingConnectionDecorator.java:1133) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:275) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:275) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.JDBCStoreManager$CancelPreparedStatement.executeUpdate(JDBCStoreManager.java:1791) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.executeUpdate(PreparedStatementManagerImpl.java:268) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.flushAndUpdate(PreparedStatementManagerImpl.java:119) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	... 63 common frames omitted
+
+2017-11-21 22:53:35.442 ERROR 62383 --- [//newAsnChannel] o.a.camel.processor.DefaultErrorHandler  : Failed delivery for (MessageId: ID-C02P377TG3QD-1511326411392-0-39 on ExchangeId: ID-C02P377TG3QD-1511326411392-0-38). Exhausted after delivery attempt: 1 caught: org.springframework.orm.jpa.JpaSystemException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.; nested exception is &lt;openjpa-2.4.1-r422266:1730418 fatal general error&gt; org.apache.openjpa.persistence.PersistenceException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.
+FailedObject: com.example.javastatefulk8s.model.ShipNotice@4dbdb8d1
+
+Message History
+---------------------------------------------------------------------------------------------------------------------------------------
+RouteId              ProcessorId          Processor                                                                        Elapsed (ms)
+[route4            ] [route4            ] [seda://newAsnChannel                                                          ] [       392]
+[route4            ] [bean4             ] [bean[com.example.javastatefulk8s.processor.ShipNoticeSaveProcessor@6183e957]  ] [         5]
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+
+org.springframework.orm.jpa.JpaSystemException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.; nested exception is &lt;openjpa-2.4.1-r422266:1730418 fatal general error&gt; org.apache.openjpa.persistence.PersistenceException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.
+FailedObject: com.example.javastatefulk8s.model.ShipNotice@4dbdb8d1
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.convertJpaAccessExceptionIfPossible(EntityManagerFactoryUtils.java:418) ~[spring-orm-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.orm.jpa.DefaultJpaDialect.translateExceptionIfPossible(DefaultJpaDialect.java:122) ~[spring-orm-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:521) ~[spring-orm-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:761) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:730) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:504) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:292) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:133) ~[spring-data-jpa-1.11.8.RELEASE.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:57) ~[spring-data-commons-1.13.8.RELEASE.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at com.sun.proxy.$Proxy97.save(Unknown Source) ~[na:na]
+	at org.springframework.data.repository.CrudRepository$save.call(Unknown Source) ~[na:na]
+	at com.example.javastatefulk8s.processor.ShipNoticeSaveProcessor.saveShipNotice(ShipNoticeSaveProcessor.groovy:18) ~[main/:na]
+	at sun.reflect.GeneratedMethodAccessor77.invoke(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_91]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_91]
+	at org.apache.camel.component.bean.MethodInfo.invoke(MethodInfo.java:478) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.bean.MethodInfo$1.doProceed(MethodInfo.java:297) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.bean.MethodInfo$1.proceed(MethodInfo.java:270) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.bean.AbstractBeanProcessor.process(AbstractBeanProcessor.java:187) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.bean.BeanProcessor.process(BeanProcessor.java:53) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:138) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:101) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.MulticastProcessor.doProcessSequential(MulticastProcessor.java:700) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.MulticastProcessor.doProcessSequential(MulticastProcessor.java:623) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.MulticastProcessor.process(MulticastProcessor.java:247) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.Splitter.process(Splitter.java:114) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.seda.SedaConsumer.sendToConsumers(SedaConsumer.java:298) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.seda.SedaConsumer.doRun(SedaConsumer.java:210) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.seda.SedaConsumer.run(SedaConsumer.java:155) [camel-core-2.20.0.jar:2.20.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_91]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_91]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+Caused by: org.apache.openjpa.persistence.PersistenceException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.
+	at org.apache.openjpa.kernel.BrokerImpl.newFlushException(BrokerImpl.java:2368) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.BrokerImpl.flush(BrokerImpl.java:2205) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.BrokerImpl.flushSafe(BrokerImpl.java:2103) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.BrokerImpl.beforeCompletion(BrokerImpl.java:2021) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.LocalManagedRuntime.commit(LocalManagedRuntime.java:81) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.BrokerImpl.commit(BrokerImpl.java:1526) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.DelegatingBroker.commit(DelegatingBroker.java:932) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.persistence.EntityManagerImpl.commit(EntityManagerImpl.java:571) ~[openjpa-persistence-2.4.1.jar:2.4.1]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:517) ~[spring-orm-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	... 45 common frames omitted
+Caused by: org.apache.openjpa.persistence.PersistenceException: ERROR: null value in column &quot;customer&quot; violates not-null constraint
+  Detail: Failing row contains (26, null, 2017-11-22T04:53:34.097Z, null, 0). {prepstmnt 1329326567 INSERT INTO ship_notice_req (vin, customer, duration, message_process_time, message_origin_time) VALUES (?, ?, ?, ?, ?)} [code=0, state=23502]
+	at org.apache.openjpa.jdbc.sql.DBDictionary.narrow(DBDictionary.java:4997) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.sql.DBDictionary.newStoreException(DBDictionary.java:4963) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.sql.SQLExceptions.getStore(SQLExceptions.java:133) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.sql.SQLExceptions.getStore(SQLExceptions.java:75) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.flushAndUpdate(PreparedStatementManagerImpl.java:144) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.BatchingPreparedStatementManagerImpl.flushAndUpdate(BatchingPreparedStatementManagerImpl.java:79) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.flushInternal(PreparedStatementManagerImpl.java:100) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.flush(PreparedStatementManagerImpl.java:88) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.ConstraintUpdateManager.flush(ConstraintUpdateManager.java:550) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.ConstraintUpdateManager.flush(ConstraintUpdateManager.java:106) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.BatchingConstraintUpdateManager.flush(BatchingConstraintUpdateManager.java:59) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.AbstractUpdateManager.flush(AbstractUpdateManager.java:104) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.AbstractUpdateManager.flush(AbstractUpdateManager.java:77) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.JDBCStoreManager.flush(JDBCStoreManager.java:731) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.DelegatingStoreManager.flush(DelegatingStoreManager.java:131) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	... 53 common frames omitted
+Caused by: org.apache.openjpa.lib.jdbc.ReportingSQLException: ERROR: null value in column &quot;customer&quot; violates not-null constraint
+  Detail: Failing row contains (26, null, 2017-11-22T04:53:34.097Z, null, 0). {prepstmnt 1329326567 INSERT INTO ship_notice_req (vin, customer, duration, message_process_time, message_origin_time) VALUES (?, ?, ?, ?, ?)} [code=0, state=23502]
+	at org.apache.openjpa.lib.jdbc.LoggingConnectionDecorator.wrap(LoggingConnectionDecorator.java:218) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.LoggingConnectionDecorator.wrap(LoggingConnectionDecorator.java:194) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.LoggingConnectionDecorator.access$1000(LoggingConnectionDecorator.java:58) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.LoggingConnectionDecorator$LoggingConnection$LoggingPreparedStatement.executeUpdate(LoggingConnectionDecorator.java:1133) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:275) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:275) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.JDBCStoreManager$CancelPreparedStatement.executeUpdate(JDBCStoreManager.java:1791) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.executeUpdate(PreparedStatementManagerImpl.java:268) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.flushAndUpdate(PreparedStatementManagerImpl.java:119) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	... 63 common frames omitted
+
+2017-11-21 22:53:35.474 ERROR 62383 --- [//newAsnChannel] o.a.camel.processor.DefaultErrorHandler  : Failed delivery for (MessageId: ID-C02P377TG3QD-1511326411392-0-44 on ExchangeId: ID-C02P377TG3QD-1511326411392-0-43). Exhausted after delivery attempt: 1 caught: org.springframework.orm.jpa.JpaSystemException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.; nested exception is &lt;openjpa-2.4.1-r422266:1730418 fatal general error&gt; org.apache.openjpa.persistence.PersistenceException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.
+FailedObject: com.example.javastatefulk8s.model.ShipNotice@52bfda93
+
+Message History
+---------------------------------------------------------------------------------------------------------------------------------------
+RouteId              ProcessorId          Processor                                                                        Elapsed (ms)
+[route4            ] [route4            ] [seda://newAsnChannel                                                          ] [       423]
+[route4            ] [bean4             ] [bean[com.example.javastatefulk8s.processor.ShipNoticeSaveProcessor@6183e957]  ] [         4]
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+
+org.springframework.orm.jpa.JpaSystemException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.; nested exception is &lt;openjpa-2.4.1-r422266:1730418 fatal general error&gt; org.apache.openjpa.persistence.PersistenceException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.
+FailedObject: com.example.javastatefulk8s.model.ShipNotice@52bfda93
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.convertJpaAccessExceptionIfPossible(EntityManagerFactoryUtils.java:418) ~[spring-orm-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.orm.jpa.DefaultJpaDialect.translateExceptionIfPossible(DefaultJpaDialect.java:122) ~[spring-orm-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:521) ~[spring-orm-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:761) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:730) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:504) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:292) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:133) ~[spring-data-jpa-1.11.8.RELEASE.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:57) ~[spring-data-commons-1.13.8.RELEASE.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at com.sun.proxy.$Proxy97.save(Unknown Source) ~[na:na]
+	at org.springframework.data.repository.CrudRepository$save.call(Unknown Source) ~[na:na]
+	at com.example.javastatefulk8s.processor.ShipNoticeSaveProcessor.saveShipNotice(ShipNoticeSaveProcessor.groovy:18) ~[main/:na]
+	at sun.reflect.GeneratedMethodAccessor77.invoke(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_91]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_91]
+	at org.apache.camel.component.bean.MethodInfo.invoke(MethodInfo.java:478) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.bean.MethodInfo$1.doProceed(MethodInfo.java:297) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.bean.MethodInfo$1.proceed(MethodInfo.java:270) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.bean.AbstractBeanProcessor.process(AbstractBeanProcessor.java:187) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.bean.BeanProcessor.process(BeanProcessor.java:53) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:138) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:101) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.MulticastProcessor.doProcessSequential(MulticastProcessor.java:700) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.MulticastProcessor.doProcessSequential(MulticastProcessor.java:623) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.MulticastProcessor.process(MulticastProcessor.java:247) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.Splitter.process(Splitter.java:114) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.seda.SedaConsumer.sendToConsumers(SedaConsumer.java:298) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.seda.SedaConsumer.doRun(SedaConsumer.java:210) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.seda.SedaConsumer.run(SedaConsumer.java:155) [camel-core-2.20.0.jar:2.20.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_91]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_91]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+Caused by: org.apache.openjpa.persistence.PersistenceException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.
+	at org.apache.openjpa.kernel.BrokerImpl.newFlushException(BrokerImpl.java:2368) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.BrokerImpl.flush(BrokerImpl.java:2205) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.BrokerImpl.flushSafe(BrokerImpl.java:2103) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.BrokerImpl.beforeCompletion(BrokerImpl.java:2021) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.LocalManagedRuntime.commit(LocalManagedRuntime.java:81) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.BrokerImpl.commit(BrokerImpl.java:1526) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.DelegatingBroker.commit(DelegatingBroker.java:932) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.persistence.EntityManagerImpl.commit(EntityManagerImpl.java:571) ~[openjpa-persistence-2.4.1.jar:2.4.1]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:517) ~[spring-orm-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	... 45 common frames omitted
+Caused by: org.apache.openjpa.persistence.PersistenceException: ERROR: null value in column &quot;customer&quot; violates not-null constraint
+  Detail: Failing row contains (30, null, 2017-11-22T04:53:34.097Z, null, 0). {prepstmnt 1661028038 INSERT INTO ship_notice_req (vin, customer, duration, message_process_time, message_origin_time) VALUES (?, ?, ?, ?, ?)} [code=0, state=23502]
+	at org.apache.openjpa.jdbc.sql.DBDictionary.narrow(DBDictionary.java:4997) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.sql.DBDictionary.newStoreException(DBDictionary.java:4963) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.sql.SQLExceptions.getStore(SQLExceptions.java:133) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.sql.SQLExceptions.getStore(SQLExceptions.java:75) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.flushAndUpdate(PreparedStatementManagerImpl.java:144) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.BatchingPreparedStatementManagerImpl.flushAndUpdate(BatchingPreparedStatementManagerImpl.java:79) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.flushInternal(PreparedStatementManagerImpl.java:100) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.flush(PreparedStatementManagerImpl.java:88) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.ConstraintUpdateManager.flush(ConstraintUpdateManager.java:550) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.ConstraintUpdateManager.flush(ConstraintUpdateManager.java:106) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.BatchingConstraintUpdateManager.flush(BatchingConstraintUpdateManager.java:59) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.AbstractUpdateManager.flush(AbstractUpdateManager.java:104) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.AbstractUpdateManager.flush(AbstractUpdateManager.java:77) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.JDBCStoreManager.flush(JDBCStoreManager.java:731) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.DelegatingStoreManager.flush(DelegatingStoreManager.java:131) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	... 53 common frames omitted
+Caused by: org.apache.openjpa.lib.jdbc.ReportingSQLException: ERROR: null value in column &quot;customer&quot; violates not-null constraint
+  Detail: Failing row contains (30, null, 2017-11-22T04:53:34.097Z, null, 0). {prepstmnt 1661028038 INSERT INTO ship_notice_req (vin, customer, duration, message_process_time, message_origin_time) VALUES (?, ?, ?, ?, ?)} [code=0, state=23502]
+	at org.apache.openjpa.lib.jdbc.LoggingConnectionDecorator.wrap(LoggingConnectionDecorator.java:218) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.LoggingConnectionDecorator.wrap(LoggingConnectionDecorator.java:194) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.LoggingConnectionDecorator.access$1000(LoggingConnectionDecorator.java:58) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.LoggingConnectionDecorator$LoggingConnection$LoggingPreparedStatement.executeUpdate(LoggingConnectionDecorator.java:1133) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:275) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:275) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.JDBCStoreManager$CancelPreparedStatement.executeUpdate(JDBCStoreManager.java:1791) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.executeUpdate(PreparedStatementManagerImpl.java:268) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.flushAndUpdate(PreparedStatementManagerImpl.java:119) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	... 63 common frames omitted
+
+2017-11-21 22:53:35.529 ERROR 62383 --- [//newAsnChannel] o.a.camel.processor.DefaultErrorHandler  : Failed delivery for (MessageId: ID-C02P377TG3QD-1511326411392-0-52 on ExchangeId: ID-C02P377TG3QD-1511326411392-0-51). Exhausted after delivery attempt: 1 caught: org.springframework.orm.jpa.JpaSystemException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.; nested exception is &lt;openjpa-2.4.1-r422266:1730418 fatal general error&gt; org.apache.openjpa.persistence.PersistenceException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.
+FailedObject: com.example.javastatefulk8s.model.ShipNotice@746e8b
+
+Message History
+---------------------------------------------------------------------------------------------------------------------------------------
+RouteId              ProcessorId          Processor                                                                        Elapsed (ms)
+[route4            ] [route4            ] [seda://newAsnChannel                                                          ] [       479]
+[route4            ] [bean4             ] [bean[com.example.javastatefulk8s.processor.ShipNoticeSaveProcessor@6183e957]  ] [         3]
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+
+org.springframework.orm.jpa.JpaSystemException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.; nested exception is &lt;openjpa-2.4.1-r422266:1730418 fatal general error&gt; org.apache.openjpa.persistence.PersistenceException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.
+FailedObject: com.example.javastatefulk8s.model.ShipNotice@746e8b
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.convertJpaAccessExceptionIfPossible(EntityManagerFactoryUtils.java:418) ~[spring-orm-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.orm.jpa.DefaultJpaDialect.translateExceptionIfPossible(DefaultJpaDialect.java:122) ~[spring-orm-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:521) ~[spring-orm-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:761) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:730) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:504) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:292) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136) ~[spring-tx-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:133) ~[spring-data-jpa-1.11.8.RELEASE.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:57) ~[spring-data-commons-1.13.8.RELEASE.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213) ~[spring-aop-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at com.sun.proxy.$Proxy97.save(Unknown Source) ~[na:na]
+	at org.springframework.data.repository.CrudRepository$save.call(Unknown Source) ~[na:na]
+	at com.example.javastatefulk8s.processor.ShipNoticeSaveProcessor.saveShipNotice(ShipNoticeSaveProcessor.groovy:18) ~[main/:na]
+	at sun.reflect.GeneratedMethodAccessor77.invoke(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_91]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_91]
+	at org.apache.camel.component.bean.MethodInfo.invoke(MethodInfo.java:478) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.bean.MethodInfo$1.doProceed(MethodInfo.java:297) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.bean.MethodInfo$1.proceed(MethodInfo.java:270) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.bean.AbstractBeanProcessor.process(AbstractBeanProcessor.java:187) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.bean.BeanProcessor.process(BeanProcessor.java:53) ~[camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:138) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:101) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.MulticastProcessor.doProcessSequential(MulticastProcessor.java:700) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.MulticastProcessor.doProcessSequential(MulticastProcessor.java:623) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.MulticastProcessor.process(MulticastProcessor.java:247) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.Splitter.process(Splitter.java:114) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.seda.SedaConsumer.sendToConsumers(SedaConsumer.java:298) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.seda.SedaConsumer.doRun(SedaConsumer.java:210) [camel-core-2.20.0.jar:2.20.0]
+	at org.apache.camel.component.seda.SedaConsumer.run(SedaConsumer.java:155) [camel-core-2.20.0.jar:2.20.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_91]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_91]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+Caused by: org.apache.openjpa.persistence.PersistenceException: The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.
+	at org.apache.openjpa.kernel.BrokerImpl.newFlushException(BrokerImpl.java:2368) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.BrokerImpl.flush(BrokerImpl.java:2205) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.BrokerImpl.flushSafe(BrokerImpl.java:2103) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.BrokerImpl.beforeCompletion(BrokerImpl.java:2021) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.LocalManagedRuntime.commit(LocalManagedRuntime.java:81) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.BrokerImpl.commit(BrokerImpl.java:1526) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.DelegatingBroker.commit(DelegatingBroker.java:932) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.persistence.EntityManagerImpl.commit(EntityManagerImpl.java:571) ~[openjpa-persistence-2.4.1.jar:2.4.1]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:517) ~[spring-orm-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	... 45 common frames omitted
+Caused by: org.apache.openjpa.persistence.PersistenceException: ERROR: null value in column &quot;customer&quot; violates not-null constraint
+  Detail: Failing row contains (37, null, 2017-11-22T04:53:34.097Z, null, 0). {prepstmnt 790553018 INSERT INTO ship_notice_req (vin, customer, duration, message_process_time, message_origin_time) VALUES (?, ?, ?, ?, ?)} [code=0, state=23502]
+	at org.apache.openjpa.jdbc.sql.DBDictionary.narrow(DBDictionary.java:4997) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.sql.DBDictionary.newStoreException(DBDictionary.java:4963) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.sql.SQLExceptions.getStore(SQLExceptions.java:133) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.sql.SQLExceptions.getStore(SQLExceptions.java:75) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.flushAndUpdate(PreparedStatementManagerImpl.java:144) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.BatchingPreparedStatementManagerImpl.flushAndUpdate(BatchingPreparedStatementManagerImpl.java:79) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.flushInternal(PreparedStatementManagerImpl.java:100) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.flush(PreparedStatementManagerImpl.java:88) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.ConstraintUpdateManager.flush(ConstraintUpdateManager.java:550) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.ConstraintUpdateManager.flush(ConstraintUpdateManager.java:106) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.BatchingConstraintUpdateManager.flush(BatchingConstraintUpdateManager.java:59) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.AbstractUpdateManager.flush(AbstractUpdateManager.java:104) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.AbstractUpdateManager.flush(AbstractUpdateManager.java:77) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.JDBCStoreManager.flush(JDBCStoreManager.java:731) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.kernel.DelegatingStoreManager.flush(DelegatingStoreManager.java:131) ~[openjpa-kernel-2.4.1.jar:2.4.1]
+	... 53 common frames omitted
+Caused by: org.apache.openjpa.lib.jdbc.ReportingSQLException: ERROR: null value in column &quot;customer&quot; violates not-null constraint
+  Detail: Failing row contains (37, null, 2017-11-22T04:53:34.097Z, null, 0). {prepstmnt 790553018 INSERT INTO ship_notice_req (vin, customer, duration, message_process_time, message_origin_time) VALUES (?, ?, ?, ?, ?)} [code=0, state=23502]
+	at org.apache.openjpa.lib.jdbc.LoggingConnectionDecorator.wrap(LoggingConnectionDecorator.java:218) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.LoggingConnectionDecorator.wrap(LoggingConnectionDecorator.java:194) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.LoggingConnectionDecorator.access$1000(LoggingConnectionDecorator.java:58) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.LoggingConnectionDecorator$LoggingConnection$LoggingPreparedStatement.executeUpdate(LoggingConnectionDecorator.java:1133) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:275) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.lib.jdbc.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:275) ~[openjpa-lib-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.JDBCStoreManager$CancelPreparedStatement.executeUpdate(JDBCStoreManager.java:1791) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.executeUpdate(PreparedStatementManagerImpl.java:268) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	at org.apache.openjpa.jdbc.kernel.PreparedStatementManagerImpl.flushAndUpdate(PreparedStatementManagerImpl.java:119) ~[openjpa-jdbc-2.4.1.jar:2.4.1]
+	... 63 common frames omitted
+
 </pre>
 </span>
 </div>
@@ -115,7 +1367,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 3.5.1</a> at Nov 21, 2017 9:26:21 PM</p>
+<a href="http://www.gradle.org">Gradle 3.5.1</a> at Nov 21, 2017 10:53:39 PM</p>
 </div>
 </div>
 </body>
