@@ -73,7 +73,7 @@ class ShipNoticeServiceTest extends DemoApplicationTests {
             (1..10000).collect {
                 new ShipNoticeBuilder()
                     .vin(it)
-                    .customer('FORD')
+                    .customer(makes[random.nextInt(5)])
                     .timeOfMessageOrigin(Instant.now().atOffset(ZoneOffset.UTC).toString())
                     .create()
             }

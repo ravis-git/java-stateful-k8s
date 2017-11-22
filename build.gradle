@@ -3,6 +3,7 @@ buildscript {
 		springBootVersion = '1.5.8.RELEASE'
         restassuredVersion = '3.0.5'
         hamcrestVersion = '1.3'
+        camelVersion = '2.20.0'
 	}
 	repositories {
 		mavenCentral()
@@ -44,7 +45,9 @@ dependencies {
         'org.apache.openjpa:openjpa-persistence-jdbc:2.4.1',
         'org.codehaus.groovy:groovy-json',
         'org.codehaus.groovy:groovy',
-        'org.springframework.boot:spring-boot-devtools'
+        'org.springframework.boot:spring-boot-devtools',
+        "org.apache.camel:camel-spring-boot-starter:${camelVersion}",
+        "org.apache.camel:camel-jsonpath:${camelVersion}"
     )
 
     runtime(
@@ -69,7 +72,7 @@ test {
         // set options for log level LIFECYCLE
         events "failed"
         exceptionFormat "short"
-        showStandardStreams = true
+        showStandardStreams = false
 
         // set options for log level DEBUG
         lifecycle {
