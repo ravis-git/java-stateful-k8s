@@ -1,6 +1,12 @@
 version: '3'
 
 services:
+
+  jre8:
+    image: rpalakodeti/jre8
+    build:
+      context: ./
+      dockerfile: jre8.Dockerfile
   app:
     build:
       context: ./
@@ -9,6 +15,10 @@ services:
     - 8000:8080
     links:
     - postgres
+    depends_on:
+    - postgres
+    environment:
+    - DB.URL=postgres
 
   postgres:
     build:
@@ -16,3 +26,20 @@ services:
       dockerfile: pg.Dockerfile
     ports:
     - 5432:5432
+    volumes:
+    - db-data:/var/lib/postgresql/data
+
+#  amq:
+#    build:
+#      context: ./
+#      dockerfile: amq.Dockerfile
+#    ports:
+#    - 61616:61616
+
+#  fuse:
+#    build:
+#      context: ./
+#      dockerfile: jboss.fuse.Dockerfile
+
+volumes:
+  db-data:

@@ -4,6 +4,7 @@ import com.example.javastatefulk8s.model.ShipNotice
 import com.example.javastatefulk8s.model.jpa.ShipNoticeRepository
 
 import javax.inject.Inject
+import javax.transaction.Transactional
 
 /**
  * Created by ravipalakodeti on 11/21/17.
@@ -13,6 +14,7 @@ class ShipNoticeSaveProcessor {
 
     @Inject
     ShipNoticeRepository shipNoticeRepository
+
 
     def saveShipNotice(ShipNotice shipNotice) {
         shipNoticeRepository.save(shipNotice)

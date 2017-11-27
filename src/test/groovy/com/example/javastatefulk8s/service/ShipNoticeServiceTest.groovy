@@ -10,6 +10,7 @@ import groovy.util.logging.Slf4j
 import io.restassured.RestAssured
 import org.apache.http.HttpStatus
 import org.junit.Before
+import org.junit.Ignore
 import org.junit.Test
 
 import javax.ws.rs.core.MediaType
@@ -35,9 +36,9 @@ class ShipNoticeServiceTest extends DemoApplicationTests {
 
     @Before
     void setup() {
-        RestAssured.port = localServerPort
+//        RestAssured.port = localServerPort
         // use this for checking against a running application instead of a test runtime
-//         RestAssured.port = 8080
+         RestAssured.port = 8000 // this is the port exposed on the docker compose infrastructure
     }
 
 
@@ -48,11 +49,9 @@ class ShipNoticeServiceTest extends DemoApplicationTests {
         .statusCode(HttpStatus.SC_OK)
     }
 
+//    @Ignore
     @Test
     void loadShipNotice() {
-
-//        //wait for 3 second for camel routes to initialize
-//        Thread.sleep(3000)
 
         given()
             .accept(MediaType.APPLICATION_JSON)
@@ -73,10 +72,10 @@ class ShipNoticeServiceTest extends DemoApplicationTests {
                                         .create()
 
         shipNotices.setShipNotices(
-            (1..50).collect {
+            (1..20).collect {
                 new ShipNoticeBuilder()
                     .vin(it)
-                    .customer(makes[random.nextInt(5)])
+                    .customer(makes[random.nextInt(4)])
                     .timeOfMessageOrigin(Instant.now().atOffset(ZoneOffset.UTC).toString())
                     .create()
             }
