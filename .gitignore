@@ -11,3 +11,6 @@
 
 .editorconfig
 devops/app/
+
+# zip files downloaded
+*.zip

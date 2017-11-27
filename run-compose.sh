@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
 
-./gradlew clean build
+# ./gradlew clean build
+#
+# cp build/libs/java-stateful-k8s-0.0.1-SNAPSHOT.jar devops/jar/
 
 # build the base jre container
-docker build -f jre.Dockerfile -t docker-jre
+docker build -f jre.Dockerfile -t docker-jre .
 
 # stop previously running containers
 docker-compose -f devops/dev.docker-compose.yml stop
@@ -17,10 +19,10 @@ docker-compose -f devops/dev.docker-compose.yml rm -f
 # docker rmi $(docker images | grep "^docker_app" | awk "{print $3}")
 
 # selectively re-build the container when required
-docker-compose -f devops/dev.docker-compose.yml build --no-cache app
+docker-compose -f devops/dev.docker-compose.yml build app # --no-cache
 
 # start all the containers in the compose file
-docker-compose -f devops/dev.docker-compose.yml  up -d
+docker-compose -f devops/dev.docker-compose.yml up -d
 
 # delete the app folder once done
 # rm -rf devops/app

@@ -1,6 +1,8 @@
 # vim:set ft=dockerfile:
 FROM alpine:3.5
 
+MAINTAINER Ravi Palakodeti <ravi.palakodeti@ge.com>
+
 # alpine includes "postgres" user/group in base install
 #   /etc/passwd:22:postgres:x:70:70::/var/lib/postgresql:/bin/sh
 #   /etc/group:34:postgres:x:70:

@@ -8,8 +8,6 @@ import com.example.javastatefulk8s.model.ShipNotice
  */
 class ChryslerAsnProcessor extends DefaultShipNoticeProcessor {
 
-    // making this method static may give better overall result as the jvm does not have multiple instances.
-        // -- This may be a future concern when running multiple instances of the service
     def processShipNotice(ShipNotice shipNotice) {
 
         //perform the default processing. additional customer specific processing can be included here
