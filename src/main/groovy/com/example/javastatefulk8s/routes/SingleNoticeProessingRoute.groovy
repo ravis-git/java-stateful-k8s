@@ -1,8 +1,7 @@
 package com.example.javastatefulk8s.routes
 
 import org.apache.camel.builder.RouteBuilder
-import org.apache.camel.component.amqp.AMQPComponent
-import org.springframework.context.annotation.Scope
+import org.apache.camel.model.config.StreamResequencerConfig
 import org.springframework.stereotype.Component
 
 /**
@@ -16,6 +15,7 @@ class SingleNoticeProessingRoute extends RouteBuilder {
 //        from('amqp:queue:oneAsn')
           from('seda:splitOnAsn')
             .routeId('single-asn-route')
+            .resequence().jsonpath('$.vin').stream(new StreamResequencerConfig(5000,4000L))
             .choice()
                 .when()
                     .jsonpath('$.[?(@.customer == "FORD")]')
