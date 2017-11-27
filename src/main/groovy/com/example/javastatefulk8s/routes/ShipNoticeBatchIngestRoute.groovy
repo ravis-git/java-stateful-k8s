@@ -21,11 +21,13 @@ class ShipNoticeBatchIngestRoute extends RouteBuilder {
     CamelContext camelContext
 
 
+/*
     @PostConstruct
     def init() {
         AMQPComponent amqp = AMQPComponent.amqpComponent("amqp://amq:61616?wireFormt.maxFrameSize=1200")
         camelContext.addComponent('amqp', amqp)
     }
+*/
 
     @Override
     void configure() throws Exception {

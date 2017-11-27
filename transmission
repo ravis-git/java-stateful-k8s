@@ -5,6 +5,10 @@ DOCKERFILE=devops/dev.docker-compose.yml
 # Build the base jre container if it needs change. Used docker command to give it a name
 # docker build -f devops/jre8.Dockerfile . # -t docker-jre .
 
+# rebuild the java application
+./gradlew clean build
+cp build/libs/
+
 [[ $# -gt 0 ]] || {
     # echo "Usage: $0 <arg1> <arg2> ... <argN>"; exit 255;
     echo -e "No params passed. All containers will be refreshed. To update a subset of containers use \n"
@@ -23,11 +27,11 @@ DOCKERFILE=devops/dev.docker-compose.yml
 
 for container in "$@"; do
   # if rebuilding the app, recompile and copy the project
-  if[ $container -eq 'app' ]
-  then
-    ./gradlew clean build
-    cp build/libs/
-  fi
+#  if [ $container -eq 'app' ]
+#  then
+#    ./gradlew clean build
+#    cp build/libs/
+#  fi
 
   docker-compose -f $DOCKERFILE build $container
 done
