@@ -72,7 +72,7 @@ class ShipNoticeServiceTest extends DemoApplicationTests {
                                         .create()
 
         shipNotices.setShipNotices(
-            (1..20).collect {
+            (1..1501).collect {
                 new ShipNoticeBuilder()
                     .vin(it)
                     .customer(makes[random.nextInt(4)])

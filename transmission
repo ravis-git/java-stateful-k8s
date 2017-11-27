@@ -22,6 +22,13 @@ DOCKERFILE=devops/dev.docker-compose.yml
 }
 
 for container in "$@"; do
+  # if rebuilding the app, recompile and copy the project
+  if[ $container -eq 'app' ]
+  then
+    ./gradlew clean build
+    cp build/libs/
+  fi
+
   docker-compose -f $DOCKERFILE build $container
 done
 
