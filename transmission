@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+
+DOCKERFILE=devops/dev.docker-compose.yml
+
+# Build the base jre container if it needs change. Used docker command to give it a name
+# docker build -f devops/jre8.Dockerfile . # -t docker-jre .
+
+[[ $# -gt 0 ]] || {
+    # echo "Usage: $0 <arg1> <arg2> ... <argN>"; exit 255;
+    echo -e "No params passed. All containers will be refreshed. To update a subset of containers use \n"
+    # docker-compose -f $DOCKERFILE build
+
+    # stop previously running containers
+    docker-compose -f $DOCKERFILE stop
+
+    # delete the containers - they will be rebuilt
+    # docker compose is unique in that it can reus the same option switch
+        # the first -f is for the transmission file. the second -f is to force so it does not ask for confirmation
+    docker-compose -f $DOCKERFILE rm -f
+
+    echo reload container1 container2 ...
+}
+
+for container in "$@"; do
+  docker-compose -f $DOCKERFILE build $container
+done
+
+# start all the containers in the transmission file
+docker-compose -f $DOCKERFILE up -d app
+
+## tail the logs
+# same as above where docker transmission uses the same switch for multiple things
+    # the first -f is for the transmission file and the seconf -f is to follow (tail) the logs
+docker-compose -f $DOCKERFILE logs -f &
